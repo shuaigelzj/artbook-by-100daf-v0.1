@@ -1,0 +1,3827 @@
+{
+  "schema_version": 1,
+  "groups": {
+    "animals": {
+      "name": "动物",
+      "section": 4,
+      "detail_section": 3,
+      "prefix": "ANI",
+      "english": "WASTELAND FAUNA",
+      "views": "正面 / 右侧 / 背面",
+      "view_prompt": "front elevation, RIGHT SIDE profile with nose pointing RIGHT, rear elevation; neutral grounded stance with identical anatomy",
+      "scale": "按生态位保留小型/中型/大型相对比例；不同物种不强制等大，无设施底座",
+      "style_ref": "sample/BIO-0016_model.png"
+    },
+    "melee": {
+      "name": "近战武器",
+      "section": 9,
+      "detail_section": 8,
+      "prefix": "MEL",
+      "english": "MELEE EQUIPMENT",
+      "views": "正视 / 右侧 / 背视",
+      "view_prompt": "broadside face view showing blade profile, narrow edge-on SIDE view, opposite broadside face view; long axis vertical; for gauntlets matched pair in each view",
+      "scale": "统一Roblox握把粗细；短刀/斧/长矛分长度族，不将匕首拉成大剑；无底座",
+      "style_ref": "机床/machining_same_scale_overview_v2.png"
+    },
+    "ranged": {
+      "name": "远程与投掷武器",
+      "section": 10,
+      "detail_section": 9,
+      "prefix": "RNG",
+      "english": "RANGED & THROWABLES",
+      "views": "左侧 / 俯视 / 右侧",
+      "view_prompt": "LEFT broadside profile, TOP DOWN plan, RIGHT broadside profile; gun barrel points LEFT in left profile and RIGHT in right profile; complete static game prop, no firing",
+      "scale": "统一握持比例；短枪/长枪/弓/投掷物分长度族，无底座；不添加设施投料口",
+      "style_ref": "机床/machining_same_scale_overview_v2.png"
+    },
+    "food": {
+      "name": "食物",
+      "section": 13,
+      "detail_section": 12,
+      "prefix": "FOD",
+      "english": "FOOD & INGREDIENTS",
+      "views": "斜前 / 右侧 / 俯视",
+      "view_prompt": "front-right elevated three-quarter, exact SIDE elevation, exact TOP DOWN plan; same whole edible inventory item in all views",
+      "scale": "统一背包拾取图标尺度与碗具口径；不同菜品可比，无额外展示底座；肉类画切块而非属主动物",
+      "style_ref": "能源装置/energy_same_scale_overview_v7.png"
+    },
+    "equipment": {
+      "name": "装备与饰品",
+      "section": 15,
+      "detail_section": 14,
+      "prefix": "EQP",
+      "english": "ARMOR & ACCESSORIES",
+      "views": "正面 / 右侧 / 背面",
+      "view_prompt": "FRONT view, RIGHT SIDE profile, BACK view of same standalone wearable; all views same size; no human mannequin, no skin, no limbs",
+      "scale": "统一Roblox块状角色穿戴比例；按胸部/头面/靴/围领分族；无设施底座，不画全套人形",
+      "style_ref": "sample/ITM-0019_model.png"
+    }
+  },
+  "records": [
+    {
+      "category": "animals",
+      "index": 0,
+      "refs": "A7",
+      "target": "幼年变异鬣狗",
+      "branch": "荒野主线",
+      "rank": 1,
+      "adaptation": "幼体改编；保留早期可驯服生态位",
+      "visual": "One juvenile SINGLE-headed hyena, oversized ears, short dark mane, ochre faceted coat with dark spots, thin limbs, alert expression; no wounds.",
+      "id": "ANI-001",
+      "original": "Baby Wolf",
+      "original_features": "HP100，zone2，可驯服",
+      "priority": "P0",
+      "source_gdd": "13.2 §3；12.1 §7",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 7,
+          "name": "变异鬣狗 (双头鬣狗)",
+          "cells": [
+            "7",
+            "变异鬣狗 (双头鬣狗)",
+            "变异犬科异种",
+            "城市废墟、荒野边缘",
+            "体重40~50公斤，部分个体因辐射畸变长有两个脑袋；全身毛发稀疏斑秃带脓包，嘴里露着黄尖牙。",
+            "废土最常见的成群捕食者，性格狡诈凶狠，常以腐肉或弱小幸存者为食，性价比高的猎物。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-001_views_v1.png"
+      },
+      "detail_source": [
+        "Baby Wolf",
+        "动物",
+        "Zone2 小狼，HP100，可被铃铛驯服为伙伴，掉狼皮与肉。",
+        "半大灰狼，耳朵偏大、四肢细长、尾巴蓬松，毛色灰棕，眼神警惕。",
+        "北美灰狼幼崽。",
+        "13.2 §3；12.1 §7",
+        "P0"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 1,
+      "refs": "A7",
+      "target": "双头变异鬣狗",
+      "branch": "荒野主线",
+      "rank": 2,
+      "adaptation": "选用设定中的双头变体；需双头骨架",
+      "visual": "Adult hyena with EXACTLY TWO adjacent heads on one torso, dark bristled mane, ochre patchy coat, muscular front shoulders, one tail; no gore.",
+      "id": "ANI-002",
+      "original": "Wolf",
+      "original_features": "HP100，zone3，可驯服",
+      "priority": "P0",
+      "source_gdd": "13.2 §3；12.1 §7",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 7,
+          "name": "变异鬣狗 (双头鬣狗)",
+          "cells": [
+            "7",
+            "变异鬣狗 (双头鬣狗)",
+            "变异犬科异种",
+            "城市废墟、荒野边缘",
+            "体重40~50公斤，部分个体因辐射畸变长有两个脑袋；全身毛发稀疏斑秃带脓包，嘴里露着黄尖牙。",
+            "废土最常见的成群捕食者，性格狡诈凶狠，常以腐肉或弱小幸存者为食，性价比高的猎物。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-002_views_v1.png"
+      },
+      "detail_source": [
+        "Wolf",
+        "动物",
+        "Zone3 成年狼，HP100 但伤害更高，夜间会克隆成群。",
+        "成年灰狼，肩背有深色鬃毛，肋骨可见，獠牙微露，尾巴低垂。",
+        "北美灰狼、森林狼。",
+        "13.2 §3；12.1 §7",
+        "P0"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 2,
+      "refs": "A2",
+      "target": "妖怪·林地型",
+      "branch": "荒野主线",
+      "rank": 3,
+      "adaptation": "变异熊轮廓；腐烂改为无血腥硬皮斑块",
+      "visual": "Hunched mutant bear, dark brown sparse blocky fur, pale grey tough skin patches, broad shoulders, blunt tusk-like canines and large paws; no decay or wounds.",
+      "id": "ANI-003",
+      "original": "Bear",
+      "original_features": "HP250，zone4，可驯服",
+      "priority": "P0",
+      "source_gdd": "13.2 §3；12.1 §7",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 2,
+          "name": "妖怪 (变异棕熊/雪熊)",
+          "cells": [
+            "2",
+            "妖怪 (变异棕熊/雪熊)",
+            "大型突变猛兽",
+            "森林、雪原、山地",
+            "体型比战前棕熊更巨大，严重驼背，脑袋几乎埋入肩膀中；苍白腐烂的皮肤如被水泡烂一般，缀着几撮稀疏毛发；嘴唇翻开外露长而粗暴的露齿犬牙。",
+            "力量惊人且回复能力极强，一挥爪可折断大树，皮厚肉糙能抵御普通枪弹扫射，但速度相对较慢。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-003_views_v1.png"
+      },
+      "detail_source": [
+        "Bear",
+        "动物",
+        "Zone4 棕熊，HP250，掉熊皮与肉，可驯服。",
+        "壮硕棕熊，厚毛、短耳、小眼，肩部隆起，爪部长而钝，嘴部有唾液。",
+        "北美棕熊、灰熊。",
+        "13.2 §3；12.1 §7",
+        "P0"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 3,
+      "refs": "A3",
+      "target": "铁背猿",
+      "branch": "荒野主线",
+      "rank": 4,
+      "adaptation": "以智慧异种替代高速猫科；需新攀行/近战骨架",
+      "visual": "Powerful black-furred gorilla, long arms, squat legs, layered BLACK armored scales over upper back, strong hands, low aggressive stance; no held weapon.",
+      "id": "ANI-004",
+      "original": "Cougar",
+      "original_features": "HP350，zone5，可驯服",
+      "priority": "P1",
+      "source_gdd": "13.2 §3；12.1 §7",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 3,
+          "name": "铁背猿",
+          "cells": [
+            "3",
+            "铁背猿",
+            "变异灵长类异种",
+            "清泉市东区原始森林",
+            "身上覆盖黑色毛发，最显著特征是背部生长着一层黑色的硬质防弹鳞片，双臂长而强壮。",
+            "群居活动，智商较高，能使用弓箭、长矛、燃烧瓶等简易工具，擅长丛林放冷箭与高空机动。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-004_views_v1.png"
+      },
+      "detail_source": [
+        "Cougar",
+        "动物",
+        "Zone5 美洲狮，HP350，高速近战，掉美洲狮皮。",
+        "修长黄褐色猫科动物，长尾、小头、肌肉线条明显，耳后深色，爪部锋利。",
+        "北美美洲狮/山狮。",
+        "13.2 §3；12.1 §7",
+        "P1"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 4,
+      "refs": "A1",
+      "target": "死亡之爪",
+      "branch": "荒野主线",
+      "rank": 5,
+      "adaptation": "压缩原著巨型体量为后期精英兽；不声称沿用熊骨架",
+      "visual": "Upright digitigrade black-scaled reptilian predator, long heavy tail, two muscular arms ending in THREE oversized curved claws each, angular horned head, amber eyes; no blood.",
+      "id": "ANI-005",
+      "original": "Mad Bear",
+      "original_features": "HP450，zone6，狂暴熊",
+      "priority": "P1",
+      "source_gdd": "13.2 §3；12.1 §7",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 1,
+          "name": "死亡之爪 (死爪)",
+          "cells": [
+            "1",
+            "死亡之爪 (死爪)",
+            "顶级陆生危险种",
+            "密林、山谷、废墟巢穴",
+            "高达4米的巨型肉食异种，全身覆盖黑色坚硬如铁的鳞片，长有粗长有力的尾巴与触目惊心的锋利巨爪，头部生有琥珀色的冷酷瞳孔与一排张开的残忍尖牙。",
+            "废土陆地战斗力天花板之一，感知敏锐、速度极快，利爪可轻易撕裂钢板与外骨骼，极度危险。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-005_views_v1.png"
+      },
+      "detail_source": [
+        "Mad Bear",
+        "动物",
+        "Zone6 狂暴熊，HP450，红眼高伤，掉疯熊皮。",
+        "比普通熊更大，毛色偏深灰，眼睛发红，口鼻有白沫，背部有抓痕与骨刺。",
+        "狂犬病熊、变异灰熊。",
+        "13.2 §3；12.1 §7",
+        "P1"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 5,
+      "refs": "A8",
+      "target": "变异野猪",
+      "branch": "湿地主线",
+      "rank": 1,
+      "adaptation": "保持野猪冲撞与召唤小怪复用",
+      "visual": "Stocky dark brown wild boar, thick charcoal needle-like mane, one pair long upward ivory tusks, broad flat snout, short robust legs.",
+      "id": "ANI-006",
+      "original": "Wild Boar",
+      "original_features": "HP100，沼泽，可驯服",
+      "priority": "P0",
+      "source_gdd": "13.2 §3/§11.1；12.1 §7/§11",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 8,
+          "name": "变异野猪",
+          "cells": [
+            "8",
+            "变异野猪",
+            "变异偶蹄类",
+            "林区、农田周边",
+            "体重达80公斤以上，皮厚肉粗，嘴部伸出长达半米的弯曲獠牙，身上覆盖粗硬钢针状鬃毛。",
+            "冲撞力极强，皮防抵御轻武器，肉质富含油脂，是废土猎户的重要猎物。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-006_views_v1.png"
+      },
+      "detail_source": [
+        "Wild Boar",
+        "动物",
+        "沼泽常见野猪，HP100，可驯服，也是野猪王召唤的小怪。",
+        "黑棕野猪，背部鬃毛竖立，獠牙外翻，鼻部宽大，身体低矮结实。",
+        "欧洲野猪、北美野猪。",
+        "13.2 §3/§11.1；12.1 §7/§11",
+        "P0"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 6,
+      "refs": "A13",
+      "target": "裂爪蟹",
+      "branch": "湿地主线",
+      "rank": 2,
+      "adaptation": "蟹替鳄鱼；需八足/双钳骨架和碰撞适配",
+      "visual": "Low broad mutant crab, domed grey mineral shell with a few moss patches, EXACTLY TWO giant forward pincers and EIGHT walking legs, small eyes, no extra claws.",
+      "id": "ANI-007",
+      "original": "Alligator",
+      "original_features": "HP250，沼泽",
+      "priority": "P0",
+      "source_gdd": "13.2 §3；12.1 §7",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 13,
+          "name": "裂爪蟹",
+          "cells": [
+            "13",
+            "裂爪蟹",
+            "变异巨型甲壳类",
+            "湖泊、沼泽、湿地",
+            "高达一米的大型湖蟹突变体，浑身挂满泥巴与藻类（远看如烂泥），背壳隆起带有钙镁矿物硬壳，正面长有两支能剪断大腿粗树干的硕大双钳。",
+            "水边危险种，背壳防御力极高，几乎无背后视野，蟹肉鲜美，双钳攻击力毁灭性强。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-007_views_v1.png"
+      },
+      "detail_source": [
+        "Alligator",
+        "动物",
+        "沼泽鳄鱼，HP250，掉肉，可驯服。",
+        "深绿/灰绿鳄鱼，长吻、背部骨板、短腿长尾，牙齿外露，身上有水草。",
+        "美洲短吻鳄。",
+        "13.2 §3；12.1 §7",
+        "P0"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 7,
+      "refs": "A31",
+      "target": "黑鸟·地栖型",
+      "branch": "湿地采猎",
+      "rank": 1,
+      "adaptation": "将巨大黑鸟改为落地采猎禽；是否飞行另配",
+      "visual": "Chunky standing mutant raven, glossy matte charcoal faceted feathers, folded wings, thick curved black beak, stout legs, broad claws, subtle copper edge feathers; no flight pose.",
+      "id": "ANI-008",
+      "original": "Turkey",
+      "original_features": "HP150，沼泽/感恩节",
+      "priority": "P0",
+      "source_gdd": "13.2 §3/§11.1；12.1 §7/§10",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 31,
+          "name": "黑鸟 (变异乌鸦)",
+          "cells": [
+            "31",
+            "黑鸟 (变异乌鸦)",
+            "变异鸟类",
+            "树林、废墟高处",
+            "风筝般巨大的变异飞鸟，外形酷似乌鸦，带有风筝大的黑翅膀、墨黑色羽毛与粗壮弯曲的利爪。",
+            "俯冲猎食小动物或玩家，羽毛坚硬，爪击剧烈。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-008_views_v1.png"
+      },
+      "detail_source": [
+        "Turkey",
+        "动物",
+        "沼泽与感恩节火鸡，HP150，掉火鸡肉与羽毛。",
+        "深棕/铜色羽毛，红色肉垂、秃头、扇形尾羽，体型肥硕。",
+        "野生火鸡。",
+        "13.2 §3/§11.1；12.1 §7/§10",
+        "P0"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 8,
+      "refs": "A11",
+      "target": "变异雪狼",
+      "branch": "雪原主线",
+      "rank": 2,
+      "adaptation": "雪地分支；非全物种科技升级",
+      "visual": "White and grey thick-furred wolf, compact ears, broad paws, icy blue eyes, bushy tail, angular fur tufts, no glowing magic.",
+      "id": "ANI-009",
+      "original": "Snow Wolf",
+      "original_features": "HP125，雪原",
+      "priority": "P1",
+      "source_gdd": "13.2 §3；12.1 §7",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 11,
+          "name": "变异雪狼 (雪狼)",
+          "cells": [
+            "11",
+            "变异雪狼 (雪狼)",
+            "变异犬科野生猛兽",
+            "北部雪原、冬季林区",
+            "全身覆盖厚重密实的灰白色或纯白毛发，长有锋利的犬齿与爪垫，眼神冷酷。",
+            "成群结队活动，擅长雪地隐蔽与围猎，攻击性强，皮毛极具防寒价值。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-009_views_v1.png"
+      },
+      "detail_source": [
+        "Snow Wolf",
+        "动物",
+        "雪原狼，HP125，掉肉与暖果，雪地高速。",
+        "白色/浅灰厚毛狼，耳朵较小，尾巴蓬松，鼻息带白雾，爪部有雪。",
+        "北极狼。",
+        "13.2 §3；12.1 §7",
+        "P1"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 9,
+      "refs": "A2",
+      "target": "妖怪·雪原型",
+      "branch": "雪原主线",
+      "rank": 3,
+      "adaptation": "同源雪熊改型；毛色与保暖结构适配",
+      "visual": "Hunched snow mutant bear, cream-white chunky fur and blue-grey tough skin plates, broad hump, dark muzzle, large paws, visible blunt canine teeth; no wounds.",
+      "id": "ANI-010",
+      "original": "Snow bear",
+      "original_features": "HP250，雪原",
+      "priority": "P1",
+      "source_gdd": "13.2 §3；12.1 §7",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 2,
+          "name": "妖怪 (变异棕熊/雪熊)",
+          "cells": [
+            "2",
+            "妖怪 (变异棕熊/雪熊)",
+            "大型突变猛兽",
+            "森林、雪原、山地",
+            "体型比战前棕熊更巨大，严重驼背，脑袋几乎埋入肩膀中；苍白腐烂的皮肤如被水泡烂一般，缀着几撮稀疏毛发；嘴唇翻开外露长而粗暴的露齿犬牙。",
+            "力量惊人且回复能力极强，一挥爪可折断大树，皮厚肉糙能抵御普通枪弹扫射，但速度相对较慢。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-010_views_v1.png"
+      },
+      "detail_source": [
+        "Snow bear",
+        "动物",
+        "雪原熊，HP250，掉肉与暖果。",
+        "白色/奶油色厚毛熊，体型略小于棕熊，肩部圆隆，鼻头黑色。",
+        "北极熊、雪原灰熊。",
+        "13.2 §3；12.1 §7",
+        "P1"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 10,
+      "refs": "A35",
+      "target": "变异松鼠",
+      "branch": "温顺采猎",
+      "rank": 1,
+      "adaptation": "保留兔子的受击逃跑角色；兔脚掉落需改名",
+      "visual": "Small russet mutant squirrel, giant fluffy curled tail, large dark eyes, tiny paws, rounded ears and cream belly, benign alert stance.",
+      "id": "ANI-011",
+      "original": "Bunny（BunnyModel）",
+      "original_features": "不攻击，受击逃跑，掉兔脚",
+      "priority": "P0",
+      "source_gdd": "13.2 §10/§11；12.1 §12.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 35,
+          "name": "变异松鼠",
+          "cells": [
+            "35",
+            "变异松鼠",
+            "变异小型哺乳类",
+            "树林、公园废墟",
+            "尾巴蓬松，体型较普通松鼠略大，行动敏捷。",
+            "栖息于树冠，以坚果、浆果与植物种子为食。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-011_views_v1.png"
+      },
+      "detail_source": [
+        "Bunny（BunnyModel）",
+        "动物",
+        "不攻击的小兔，受击逃跑，掉兔脚，可驯服。",
+        "小型白/灰兔，长耳、圆眼、短尾，后腿有力，受惊时耳朵后贴。",
+        "欧洲野兔、棉尾兔。",
+        "13.2 §10/§11；12.1 §12.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 11,
+      "refs": "A5",
+      "target": "双头牛",
+      "branch": "温顺采猎",
+      "rank": 3,
+      "adaptation": "温顺驮兽；双头与原水牛骨架不同",
+      "visual": "Gentle stocky bovine with EXACTLY TWO adjacent horned heads and TWO low fat humps, dusty brown hide, four strong legs, one tail; no saddles.",
+      "id": "ANI-012",
+      "original": "Buffalo（301）",
+      "original_features": "温顺动物，雪原，不掉皮",
+      "priority": "P1",
+      "source_gdd": "03.2c2 §7；13.2 §10/§11；12.1 §12.4",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 5,
+          "name": "双头牛",
+          "cells": [
+            "5",
+            "双头牛",
+            "变异农用家畜",
+            "农庄、聚落、荒野商队",
+            "肩高近两米，最显著特征是并排生长着两个脑袋（四只眼睛），背部两侧隆起巨大的脂肪驼峰。",
+            "废土最重要的驮运与耕作家畜，性情相对温顺，肉质厚实可制牛排与熬制牛脂。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "动物/final/ANI-012_views_v1.png"
+      },
+      "detail_source": [
+        "Buffalo（301）",
+        "温顺动物",
+        "雪原温顺水牛，HP100，受击逃跑，不掉皮，不可驯服。",
+        "厚重棕黑毛皮、宽肩峰、短角、低垂头部，四肢粗壮，身上有雪。",
+        "美洲野牛。",
+        "03.2c2 §7；13.2 §10/§11；12.1 §12.4",
+        "P1"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 12,
+      "refs": "A6",
+      "target": "大角鹿",
+      "branch": "温顺采猎",
+      "rank": 2,
+      "adaptation": "原仅预制体；预备资产不接入主线",
+      "visual": "Tall brown deer with pale flank spots, long slim legs, large symmetric branching antlers, cream muzzle, neutral stance; no saddle.",
+      "id": "ANI-013",
+      "original": "Elk",
+      "original_features": "仅预制体，无配置，疑废弃",
+      "priority": "P2",
+      "source_gdd": "13.2 §10/§14",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 6,
+          "name": "角鹿 (大角鹿)",
+          "cells": [
+            "6",
+            "角鹿 (大角鹿)",
+            "变异野生鹿类",
+            "林区、丘陵平原",
+            "体型如骏马般高大，头顶长有粗壮分叉的树枝状骨质大角，身上带有浅色斑纹。",
+            "废土主要高级野味猎物，听觉与嗅觉敏锐，跑动速度极快，鹿皮可制成高质皮革。"
+          ]
+        }
+      ],
+      "status": "调试/占位/预备",
+      "images": {
+        "v1": "动物/final/ANI-013_views_v1.png"
+      },
+      "detail_source": [
+        "Elk",
+        "动物",
+        "仅预制体的麋鹿，无配置与脚本引用，疑废弃。",
+        "大型鹿类，分叉鹿角、浅棕毛皮、颈部鬃毛，四肢修长。",
+        "北美马鹿/麋鹿。",
+        "13.2 §10/§14",
+        "P2"
+      ]
+    },
+    {
+      "category": "animals",
+      "index": 13,
+      "refs": "A12",
+      "target": "穴居兽·霜灰型",
+      "branch": "雪原预备",
+      "rank": 4,
+      "adaptation": "原仅预制体；穴居兽霜灰配色为适应性改编",
+      "visual": "Pale slate-grey hairless cave ambush beast, low feline-like quadruped body, long foreclaws, small pale eyes, tapered ears and thick balancing tail, no wounds; not a leopard skin.",
+      "id": "ANI-014",
+      "original": "Snow Leopard",
+      "original_features": "仅预制体，无配置",
+      "priority": "P2",
+      "source_gdd": "13.2 §10/§15.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 12,
+          "name": "穴居兽",
+          "cells": [
+            "12",
+            "穴居兽",
+            "下水道/洞穴猛兽",
+            "废墟地下、阴暗坑道",
+            "适应无光环境，四肢带有锋利的长爪与尖锐犬齿，皮肤湿冷无毛。",
+            "潜伏于下水道与地下遗迹的伏击型猛兽，视力退化但听觉与嗅觉极其敏锐。"
+          ]
+        }
+      ],
+      "status": "调试/占位/预备",
+      "images": {
+        "v1": "动物/final/ANI-014_views_v1.png"
+      },
+      "detail_source": [
+        "Snow Leopard",
+        "动物",
+        "仅预制体的雪豹，无配置，放在敌人目录但归动物。",
+        "灰白厚毛、黑色斑点、粗长尾巴、宽掌，体型介于猞猁与豹之间。",
+        "雪豹。",
+        "13.2 §10/§15.2",
+        "P2"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 0,
+      "refs": "C1",
+      "target": "热熔破拆斧·测试型",
+      "branch": "调试预留",
+      "rank": 0,
+      "adaptation": "管理员伤害9999不进入成长序列；仅测试涂装",
+      "visual": "Compact tactical breaching axe, dark alloy rectangular head, narrow RED thermal cutting edge, white diagnostic grip band; no lettering.",
+      "id": "MEL-001",
+      "original": "Admin axe",
+      "original_features": "GM 斧，伤害 9999",
+      "priority": "P2",
+      "source_gdd": "13.1 §5.1；03.2a2 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 1,
+          "name": "“热熔切割斧”（热熔破拆斧 / 玩家昵称“黑切” / “破甲斧”）",
+          "cells": [
+            "1",
+            "“热熔切割斧”（热熔破拆斧 / 玩家昵称“黑切” / “破甲斧”）",
+            "热熔动力战术斧",
+            "新联盟 / 老白（主力武器）",
+            "高能热熔等离子体 / 弧光切割",
+            "外观酷似战术消防破拆斧，具有粗犷的暗灰色高强度合金斧身，钝厚的斧背与宽大前斧刃结合。斧柄内置电能接口与导线，启动时斧刃边缘闪烁出猩红色的热熔等离子弧光与高温高频能量流，斧柄配有防滑高分子橡塑护套与战术挂扣。",
+            "老白抽奖获得并作为招牌武器的高阶破甲冷兵器，能瞬间热熔切开重型陶钢装甲、防空闸门与高阶异种（进化体/圣光骑士团装甲）的硬质外壳。"
+          ]
+        }
+      ],
+      "status": "调试/占位/预备",
+      "images": {
+        "v1": "近战武器/final/MEL-001_views_v1.png"
+      },
+      "detail_source": [
+        "Admin axe",
+        "近战/斧",
+        "GM 专用斧，伤害 9999，可瞬间砍树，仅管理员测试使用。",
+        "夸张的巨型双刃斧，斧面发光或镀金，斧柄缠红布，带 GM 标识。",
+        "开发者测试武器、奇幻巨斧。",
+        "13.1 §5.1；03.2a2 §5.2",
+        "P2"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 1,
+      "refs": "C15",
+      "target": "废旧木柄伐木斧",
+      "branch": "采集斧系",
+      "rank": 1,
+      "adaptation": "将双手伐木斧压缩为新手握持尺度",
+      "visual": "Simple worn single-bit iron axe, chipped compact head, curved brown wooden handle bound with coarse rope, no glow.",
+      "id": "MEL-002",
+      "original": "Old axe（104）",
+      "original_features": "伤害 10，砍树 1",
+      "priority": "P0",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 15,
+          "name": "伐木斧 / 废土双手大斧",
+          "cells": [
+            "15",
+            "伐木斧 / 废土双手大斧",
+            "农用与伐木双手斧",
+            "废土农庄 / 玩家",
+            "淬火高碳钢双刃/单刃斧",
+            "粗重的大型双刃或单刃伐木斧，配有长达90cm的弯曲山核桃木或硬木斧柄，斧头表面残留着木屑与油脂。",
+            "玩家撸树开荒、建造营地及遭遇异种浪潮时顺手拿起的强力双手砍劈武器。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-002_views_v1.png"
+      },
+      "detail_source": [
+        "Old axe（104）",
+        "近战/斧",
+        "新手斧，伤害 10、砍树 1，开局主要采集工具。",
+        "短柄旧斧，斧刃有缺口与锈迹，木柄缠麻绳，握把处磨损发亮。",
+        "西部拓荒者手斧、消防斧。",
+        "13.1 §5.1",
+        "P0"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 2,
+      "refs": "C12",
+      "target": "81号厂战术短斧",
+      "branch": "采集斧系",
+      "rank": 2,
+      "adaptation": "保留伐木3的进阶角色",
+      "visual": "Clean forged tactical hatchet, broader grey steel blade and squared hammer poll, straight olive wrapped handle, practical steel collar.",
+      "id": "MEL-003",
+      "original": "Good axe（110）",
+      "original_features": "伤害 20，砍树 3",
+      "priority": "P0",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 12,
+          "name": "短斧 / 81号厂战术短斧",
+          "cells": [
+            "12",
+            "短斧 / 81号厂战术短斧",
+            "单手战术短斧",
+            "新联盟 / 老白（早期）",
+            "淬火高碳钢斧头 / 锻造斧背",
+            "斧头由高碳钢淬火锻造，前刃锋利开刃，后斧背呈方头平锤形状，斧柄为50cm长加厚钢管或硬木手柄，柄尾带有防脱手手绳孔。",
+            "老白等力量系玩家早期与中期的主力近战武器，单手挥砍灵活，斧背可当重锤砸击装甲。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-003_views_v1.png"
+      },
+      "detail_source": [
+        "Good axe（110）",
+        "近战/斧",
+        "进阶斧，伤害 20、砍树 3，中期主力伐木工具。",
+        "长柄斧，斧刃更宽且抛光，木柄直且带皮革握把，斧背有小锤面。",
+        "伐木工长柄斧。",
+        "13.1 §5.1",
+        "P0"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 3,
+      "refs": "C9",
+      "target": "战术通用匕首",
+      "branch": "刀剑系",
+      "rank": 1,
+      "adaptation": "近身快速副武器",
+      "visual": "Short thick matte charcoal survival knife, straight single cutting edge, minimal spine serrations, black rubber grip and small guard; one knife only.",
+      "id": "MEL-004",
+      "original": "Knife（111）",
+      "original_features": "伤害 25",
+      "priority": "P0",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 9,
+          "name": "高频/战术通用直刀与匕首",
+          "cells": [
+            "9",
+            "高频/战术通用直刀与匕首",
+            "战术单兵直刀",
+            "废土佣兵 / 玩家",
+            "全贯穿式（Full-tang）厚重刀身",
+            "25厘米长的厚重高碳钢直刀，刀身表面涂有哑光黑色防锈涂层，刀背带有切削锯齿，刀柄采用带防滑纹路的黑色高分子K胶或橡胶包裹，配有K防脱落战术刀鞘。",
+            "单兵生存、野外剥皮割肉与近身刺杀的全能冷兵器，废土客与玩家人人必备的随身副武器。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-004_views_v1.png"
+      },
+      "detail_source": [
+        "Knife（111）",
+        "近战/剑",
+        "伤害 25 的短刀，攻速快，适合近身补刀。",
+        "单刃猎刀，刀刃 25–30 cm，带血槽与木质/骨制刀柄，刀鞘可挂腰。",
+        "Bowie 猎刀、西部随身刀。",
+        "13.1 §5.1",
+        "P0"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 4,
+      "refs": "C10",
+      "target": "军团指挥官军刀",
+      "branch": "刀剑系",
+      "rank": 2,
+      "adaptation": "长刀替直剑；需挥砍外形适配",
+      "visual": "Slightly curved silver military sabre, plain half-basket guard, dark leather grip, restrained bronze pommel; no scabbard.",
+      "id": "MEL-005",
+      "original": "Sword（112）",
+      "original_features": "伤害 35",
+      "priority": "P0",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 10,
+          "name": "军团高阶军刀 / 指挥官军刀",
+          "cells": [
+            "10",
+            "军团高阶军刀 / 指挥官军刀",
+            "军官战术长刀",
+            "军团军官 / 亲卫队",
+            "80cm 缎面淬火单刃弯刀",
+            "长约80厘米的单刃微弯军刀，刀身展现出缎面淬火的冷冷金属光泽，配有半封闭式的钢铁防弹护拳手柄，黑皮包钢的军刀鞘挂在腰间，显得庄重威严。",
+            "军团百夫长及更高阶军官的身份象征与近战战刀，刀身刚柔相济，适合骑马扫砍与军官近身比武。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-005_views_v1.png"
+      },
+      "detail_source": [
+        "Sword（112）",
+        "近战/剑",
+        "伤害 35 的基础剑，平衡型近战武器。",
+        "直刃单手剑，十字护手、皮革缠柄、圆头配重，刃面有使用划痕。",
+        "军刀、骑兵剑。",
+        "13.1 §5.1",
+        "P0"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 5,
+      "refs": "C3",
+      "target": "窒息者氮气动力锤",
+      "branch": "动力重击",
+      "rank": 4,
+      "adaptation": "用高压氮气与冷聚变表示原充能重击；不继承雷电神话",
+      "visual": "Two-handed grey power hammer with CYLINDRICAL chamber head, short front impact cone, small blue power cartridge on shaft and one pressure collar, chunky black grip.",
+      "id": "MEL-006",
+      "original": "Quake（113）",
+      "original_features": "伤害 60，雷神锤充能特效",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 3,
+          "name": "窒息者 / 氮气动力锤",
+          "cells": [
+            "3",
+            "窒息者 / 氮气动力锤",
+            "氮气动力战术锤",
+            "新联盟 / 楚光、老白等",
+            "强力场干涉 / 微型冷聚变电池供电",
+            "长达一米半的硬质金属锤柄，前段带有枪械式的拉机柄与防滑护木，锤头为一个粗大的圆柱形高压氮气喷射室，前面配有硬质合金破甲锥头；锤柄前段嵌入了一块微型冷聚变电池，闪烁着微弱的淡蓝色荧光。",
+            "结合枪械与高压氮气的重型战术锤，具备A模式伞状防御（偏移子弹）、B模式氮气装甲接触爆破（类似爆炸冲击波毁伤装甲）与C模式高压喷气加速。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-006_views_v1.png"
+      },
+      "detail_source": [
+        "Quake（113）",
+        "近战/剑",
+        "伤害 60，带雷神锤脚本与充能特效，重击型武器。",
+        "方头战锤，锤面刻雷电纹，锤头嵌蓝色能量核心，柄部有金属环与皮革。",
+        "雷神之锤、蒸汽朋克战锤。",
+        "13.1 §5.1",
+        "P1"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 6,
+      "refs": "C13",
+      "target": "矛尖长柄战斧",
+      "branch": "采集斧系",
+      "rank": 3,
+      "adaptation": "保留强化采集与长柄两用定位",
+      "visual": "Long steel-handled axe with wide forged chopping blade and one straight TOP spear spike, dark rubber two-handed grip, heavy reinforced collar.",
+      "id": "MEL-007",
+      "original": "Power axe（114）",
+      "original_features": "伤害 30，砍树 20",
+      "priority": "P0",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 13,
+          "name": "带矛头的长柄斧",
+          "cells": [
+            "13",
+            "带矛头的长柄斧",
+            "双手长柄战斧",
+            "新联盟 / 老白（重装）",
+            "1.2米加厚柄 / 顶端焊接穿刺矛头",
+            "结合了战斧与长矛的长柄双手武器。1.2米长加厚钢管手柄，前段为宽大锋利的战斧斧刃，顶部延伸出一根长约20cm的四棱重型破甲矛头。",
+            "老白配备伪·动力装甲时定制的重型长兵器，既可双手破甲大劈大砍，又能居高临下刺穿敌方掩体。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-007_views_v1.png"
+      },
+      "detail_source": [
+        "Power axe（114）",
+        "近战/斧",
+        "伤害 30、砍树 20，强化伐木与战斗两用。",
+        "厚背宽刃斧，斧头用铆钉固定在金属柄上，柄尾有配重球与防滑胶。",
+        "工业伐木斧、消防破拆斧。",
+        "13.1 §5.1",
+        "P0"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 7,
+      "refs": "C9,C1",
+      "target": "高频能量护刃直刀",
+      "branch": "刀剑系",
+      "rank": 4,
+      "adaptation": "实刃加能源护刃为改编；格挡与耗能机制需对接",
+      "visual": "Long solid titanium straight blade with a THIN cyan energized edge, compact battery guard, dark rubber grip; blade is solid metal, not pure light beam.",
+      "id": "MEL-008",
+      "original": "Light Saber（119）",
+      "original_features": "伤害 40，能量 10，格挡",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 9,
+          "name": "高频/战术通用直刀与匕首",
+          "cells": [
+            "9",
+            "高频/战术通用直刀与匕首",
+            "战术单兵直刀",
+            "废土佣兵 / 玩家",
+            "全贯穿式（Full-tang）厚重刀身",
+            "25厘米长的厚重高碳钢直刀，刀身表面涂有哑光黑色防锈涂层，刀背带有切削锯齿，刀柄采用带防滑纹路的黑色高分子K胶或橡胶包裹，配有K防脱落战术刀鞘。",
+            "单兵生存、野外剥皮割肉与近身刺杀的全能冷兵器，废土客与玩家人人必备的随身副武器。"
+          ]
+        },
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 1,
+          "name": "“热熔切割斧”（热熔破拆斧 / 玩家昵称“黑切” / “破甲斧”）",
+          "cells": [
+            "1",
+            "“热熔切割斧”（热熔破拆斧 / 玩家昵称“黑切” / “破甲斧”）",
+            "热熔动力战术斧",
+            "新联盟 / 老白（主力武器）",
+            "高能热熔等离子体 / 弧光切割",
+            "外观酷似战术消防破拆斧，具有粗犷的暗灰色高强度合金斧身，钝厚的斧背与宽大前斧刃结合。斧柄内置电能接口与导线，启动时斧刃边缘闪烁出猩红色的热熔等离子弧光与高温高频能量流，斧柄配有防滑高分子橡塑护套与战术挂扣。",
+            "老白抽奖获得并作为招牌武器的高阶破甲冷兵器，能瞬间热熔切开重型陶钢装甲、防空闸门与高阶异种（进化体/圣光骑士团装甲）的硬质外壳。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-008_views_v1.png"
+      },
+      "detail_source": [
+        "Light Saber（119）",
+        "近战/剑",
+        "伤害 40，消耗能量 10，可格挡，有 JediV3 加成。",
+        "金属剑柄，剑刃为青蓝/白色发光能量束，护手有开关与散热槽，挥动带光轨。",
+        "光剑、能量武器。",
+        "13.1 §5.1",
+        "P1"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 8,
+      "refs": "C12",
+      "target": "精锻合金短斧",
+      "branch": "采集斧系",
+      "rank": 2.5,
+      "adaptation": "宝石表现改为精锻合金与状态条；低于长柄采集档",
+      "visual": "Precision forged silver-grey hatchet, faceted wedge blade, dark reinforced grip, small non-glowing cyan inspection inset, no crystal blade.",
+      "id": "MEL-009",
+      "original": "Gem axe（121）",
+      "original_features": "伤害 25，砍树 3，光效",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 12,
+          "name": "短斧 / 81号厂战术短斧",
+          "cells": [
+            "12",
+            "短斧 / 81号厂战术短斧",
+            "单手战术短斧",
+            "新联盟 / 老白（早期）",
+            "淬火高碳钢斧头 / 锻造斧背",
+            "斧头由高碳钢淬火锻造，前刃锋利开刃，后斧背呈方头平锤形状，斧柄为50cm长加厚钢管或硬木手柄，柄尾带有防脱手手绳孔。",
+            "老白等力量系玩家早期与中期的主力近战武器，单手挥砍灵活，斧背可当重锤砸击装甲。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-009_views_v1.png"
+      },
+      "detail_source": [
+        "Gem axe（121）",
+        "近战/斧",
+        "伤害 25、砍树 3，带宝石光效的斧。",
+        "斧背嵌发光蓝宝石，斧刃半透明水晶质感，柄为深色硬木配银饰。",
+        "水晶斧、奇幻采矿斧。",
+        "13.1 §5.1",
+        "P1"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 9,
+      "refs": "C23",
+      "target": "合金钢筋投枪",
+      "branch": "长柄刺击",
+      "rank": 2,
+      "adaptation": "将宝石矛改为精加工金属尖；本项仍为近战外观",
+      "visual": "Long rebar-inspired steel spear, polished four-sided spear point, reinforced joint and dark textile mid-grip, no gemstones.",
+      "id": "MEL-010",
+      "original": "Gem spear（123）",
+      "original_features": "伤害 35",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 23,
+          "name": "钢筋标枪 / 磨尖金属投枪",
+          "cells": [
+            "23",
+            "钢筋标枪 / 磨尖金属投枪",
+            "重型投掷标枪",
+            "新联盟 / 老白（早期）",
+            "螺纹钢筋/铁管 / 砂轮磨尖四棱枪头",
+            "由长约1.2至1.5米的加厚螺纹钢筋或厚壁铁管截断，前段在砂轮机上打磨成极其尖锐的圆锥/四棱针尖，尾部缠绕布条以平衡飞行重心。",
+            "老白等力量系玩家早期杀手锏，依靠强悍肉体力量近距离掷出，可直接穿透变异猪与啃食者。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-010_views_v1.png"
+      },
+      "detail_source": [
+        "Gem spear（123）",
+        "近战/长矛",
+        "伤害 35，长距离突刺，适合保持距离。",
+        "长木杆配水晶矛头，矛头呈菱形半透明，连接处有金属护环与流苏。",
+        "水晶长矛、部落仪式矛。",
+        "13.1 §5.1",
+        "P1"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 10,
+      "refs": "C24,A17",
+      "target": "银嘴蛇毒猎矛",
+      "branch": "长柄刺击",
+      "rank": 3,
+      "adaptation": "设定长矛与蛇毒组合改编；保留中毒角色",
+      "visual": "Wooden hunting spear with dark metal triangular barbed point, small SEALED green toxin ampoule below tip, leather wrappings, no dripping fluid.",
+      "id": "MEL-011",
+      "original": "Poison Spear（125）",
+      "original_features": "伤害 40，中毒",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 24,
+          "name": "废土长矛 / 兽骨长枪",
+          "cells": [
+            "24",
+            "废土长矛 / 兽骨长枪",
+            "长柄刺杀兵器",
+            "荒野部落 / 流民",
+            "2–3米压实木杆 / 磨尖废铁片/兽骨",
+            "长达两至三米的坚硬变异原木杆，顶端用铁丝与麻绳牢固系结着磨尖的三角废铁片或变异兽骨，枪头下方绑有防血滑手的水刺毛绳。",
+            "荒野部落与流民防卫营地最基础的长兵器，结阵成矛墙可有效阻挡异种扑杀。"
+          ]
+        },
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 17,
+          "name": "银嘴蛇",
+          "cells": [
+            "17",
+            "银嘴蛇",
+            "变异毒蛇",
+            "清泉市东区原始森林",
+            "身上带有银白色花纹，从唇缝延伸至眼角，毒牙基部能储存120ml剧毒毒液。",
+            "致命剧毒蛇类，攻击迅捷，毒腺遍布全身无法直接食用。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-011_views_v1.png"
+      },
+      "detail_source": [
+        "Poison Spear（125）",
+        "近战/长矛",
+        "伤害 40，命中造成中毒，持续掉血。",
+        "骨/铁矛头涂绿色毒液，矛尖有倒钩，柄缠毒藤与羽毛，靠近有绿色滴液。",
+        "毒矛、猎毒武器。",
+        "13.1 §5.1",
+        "P1"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 11,
+      "refs": "C9",
+      "target": "消光潜行战术刀",
+      "branch": "刀剑系",
+      "rank": 2,
+      "adaptation": "同伤害35的隐蔽侧支，不假装高于军刀",
+      "visual": "Long slim matte black tactical knife with subtle recurve edge, compact black guard and dark textured grip, minimal violet metal tint, no magic motifs.",
+      "id": "MEL-012",
+      "original": "Night Blade（132）",
+      "original_features": "伤害 35",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 9,
+          "name": "高频/战术通用直刀与匕首",
+          "cells": [
+            "9",
+            "高频/战术通用直刀与匕首",
+            "战术单兵直刀",
+            "废土佣兵 / 玩家",
+            "全贯穿式（Full-tang）厚重刀身",
+            "25厘米长的厚重高碳钢直刀，刀身表面涂有哑光黑色防锈涂层，刀背带有切削锯齿，刀柄采用带防滑纹路的黑色高分子K胶或橡胶包裹，配有K防脱落战术刀鞘。",
+            "单兵生存、野外剥皮割肉与近身刺杀的全能冷兵器，废土客与玩家人人必备的随身副武器。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-012_views_v1.png"
+      },
+      "detail_source": [
+        "Night Blade（132）",
+        "近战/剑",
+        "伤害 35，暗色刀刃，适合夜间战斗。",
+        "弯曲黑刃，刃面有暗紫纹路与缺口，护手呈蝙蝠翼形，柄缠黑布。",
+        "暗影刀、刺客弯刀。",
+        "13.1 §5.1",
+        "P1"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 12,
+      "refs": "E46,E35",
+      "target": "低温伺服拳套",
+      "branch": "控制侧支",
+      "rank": 3,
+      "adaptation": "机械义肢/手套的低温模块改型；冻结为玩法效果待实现",
+      "visual": "Pair of wearable dark titanium mechanical gauntlets, broad knuckle plates, ONE small cyan coolant cartridge on each forearm cuff, frost-white edge accents; no arms or mannequin.",
+      "id": "MEL-013",
+      "original": "Glacial Fists（133）",
+      "original_features": "伤害 20，冰冻减速",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 46,
+          "name": "机械义肢 (战术手臂/腿骨)",
+          "cells": [
+            "46",
+            "机械义肢 (战术手臂/腿骨)",
+            "人体植入义体",
+            "巨石城 / 理想城",
+            "钛合金 / 塑钢 / 伺服电机",
+            "剥落漆面的钛合金或塑钢机械骨骼，露出的液压管线与伺服电机。",
+            "替代残肢并提供远超常人的握力、挥击力与奔跑速度。"
+          ]
+        },
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 35,
+          "name": "耐磨战术手套",
+          "cells": [
+            "35",
+            "耐磨战术手套",
+            "防护服与服装",
+            "废土客 / 佣兵",
+            "凯夫拉 / 厚橡胶",
+            "掌心带防滑皮垫，指关节带有硬质防护块。",
+            "改善枪械握持防滑，防止高热枪管烫伤及手部划伤。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-013_views_v1.png"
+      },
+      "detail_source": [
+        "Glacial Fists（133）",
+        "近战/拳套",
+        "伤害 20，命中冰冻/减速，近身控制武器。",
+        "双手金属拳套，指节嵌冰晶，拳面有霜纹，挥拳带冰雾与碎冰粒子。",
+        "冰霜拳套、格斗护手。",
+        "13.1 §5.1",
+        "P1"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 13,
+      "refs": "C10",
+      "target": "军官军刀·冬季礼装",
+      "branch": "活动侧支",
+      "rank": 2,
+      "adaptation": "圣诞35伤害保持同档；仅冬季涂装",
+      "visual": "Military sabre with same practical half-basket geometry, white metal blade, burgundy leather grip and simple cream cloth tie, no candy-cane or fantasy ornaments.",
+      "id": "MEL-014",
+      "original": "SantaSword（135）",
+      "original_features": "伤害 35",
+      "priority": "P2",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 10,
+          "name": "军团高阶军刀 / 指挥官军刀",
+          "cells": [
+            "10",
+            "军团高阶军刀 / 指挥官军刀",
+            "军官战术长刀",
+            "军团军官 / 亲卫队",
+            "80cm 缎面淬火单刃弯刀",
+            "长约80厘米的单刃微弯军刀，刀身展现出缎面淬火的冷冷金属光泽，配有半封闭式的钢铁防弹护拳手柄，黑皮包钢的军刀鞘挂在腰间，显得庄重威严。",
+            "军团百夫长及更高阶军官的身份象征与近战战刀，刀身刚柔相济，适合骑马扫砍与军官近身比武。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-014_views_v1.png"
+      },
+      "detail_source": [
+        "SantaSword（135）",
+        "近战/剑",
+        "伤害 35 的圣诞主题剑。",
+        "红绿配色的宽刃剑，护手呈拐杖糖螺旋，剑身有雪花纹，柄尾挂小铃铛。",
+        "圣诞主题奇幻剑。",
+        "13.1 §5.1",
+        "P2"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 14,
+      "refs": "C24,C3",
+      "target": "氮气动力破甲长枪",
+      "branch": "长柄刺击",
+      "rank": 5,
+      "adaptation": "长矛和氮气锤技术组合改编；不是原文独立命名武器",
+      "visual": "Advanced long dark alloy spear, heavy narrow four-sided penetrator tip, cylindrical pressure chamber below tip, small blue energy cell, long black grip; no runes.",
+      "id": "MEL-015",
+      "original": "Gungnir（138）",
+      "original_features": "伤害 100",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 24,
+          "name": "废土长矛 / 兽骨长枪",
+          "cells": [
+            "24",
+            "废土长矛 / 兽骨长枪",
+            "长柄刺杀兵器",
+            "荒野部落 / 流民",
+            "2–3米压实木杆 / 磨尖废铁片/兽骨",
+            "长达两至三米的坚硬变异原木杆，顶端用铁丝与麻绳牢固系结着磨尖的三角废铁片或变异兽骨，枪头下方绑有防血滑手的水刺毛绳。",
+            "荒野部落与流民防卫营地最基础的长兵器，结阵成矛墙可有效阻挡异种扑杀。"
+          ]
+        },
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 3,
+          "name": "窒息者 / 氮气动力锤",
+          "cells": [
+            "3",
+            "窒息者 / 氮气动力锤",
+            "氮气动力战术锤",
+            "新联盟 / 楚光、老白等",
+            "强力场干涉 / 微型冷聚变电池供电",
+            "长达一米半的硬质金属锤柄，前段带有枪械式的拉机柄与防滑护木，锤头为一个粗大的圆柱形高压氮气喷射室，前面配有硬质合金破甲锥头；锤柄前段嵌入了一块微型冷聚变电池，闪烁着微弱的淡蓝色荧光。",
+            "结合枪械与高压氮气的重型战术锤，具备A模式伞状防御（偏移子弹）、B模式氮气装甲接触爆破（类似爆炸冲击波毁伤装甲）与C模式高压喷气加速。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-015_views_v1.png"
+      },
+      "detail_source": [
+        "Gungnir（138）",
+        "近战/长枪",
+        "伤害 100，超长 reach，顶级长枪。",
+        "长枪杆刻符文，枪头为多棱发光金属，枪尖有金色能量，柄尾有配重与流苏。",
+        "北欧神枪 Gungnir、仪式长枪。",
+        "13.1 §5.1",
+        "P1"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 15,
+      "refs": "C5",
+      "target": "重型高频链锯刃",
+      "branch": "动力重击",
+      "rank": 5,
+      "adaptation": "链锯替大剑；需要握持/命中动画适配",
+      "visual": "Two-handed heavy chain blade, broad grey guide bar with TWO rows of large blunt stylized carbide teeth, dark compact motor guard, robust handle; no blood.",
+      "id": "MEL-016",
+      "original": "Beast Slayer（139）",
+      "original_features": "伤害 70",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 5,
+          "name": "重型高频链锯（链锯臂）",
+          "cells": [
+            "5",
+            "重型高频链锯（链锯臂）",
+            "动力装甲/外骨骼链锯",
+            "军团 / 新联盟 / 黏菌异种",
+            "柴油/聚变核心驱动 / 双排碳化钨锯齿",
+            "长达一米至一米半的加厚重型链锯导板，外围环绕着双排粗大的碳化钨硬质合金锯齿，上方带有钢制防溅血护罩与润滑油喷注孔，侧面连接着高速旋转的传动齿轮轴与排气口。",
+            "挂载于T-10动力装甲或外骨骼右臂，极速旋转的链锯能强行撕裂金属掩体、坚固墙体与重型肉体，近战毁伤效果极其残暴。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-016_views_v1.png"
+      },
+      "detail_source": [
+        "Beast Slayer（139）",
+        "近战/大剑",
+        "伤害 70，大型双手剑，适合对抗野兽。",
+        "宽厚双手大剑，刃面有锯齿与兽牙装饰，护手呈兽爪形，柄缠兽皮。",
+        "猎兽大剑、 monster hunter 风格。",
+        "13.1 §5.1",
+        "P1"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 16,
+      "refs": "C6",
+      "target": "工业伐木链锯",
+      "branch": "采集斧系",
+      "rank": 4,
+      "adaptation": "高效连续采集对应砍树40；换为链锯握持",
+      "visual": "Compact yellow industrial chainsaw, thick dark toothed guide bar, top loop handle and rear trigger grip, simple side vents, one machine no loose parts.",
+      "id": "MEL-017",
+      "original": "Super Axe（141）",
+      "original_features": "伤害 30，砍树 40",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 6,
+          "name": "手持式工业电锯 / 伐木链锯",
+          "cells": [
+            "6",
+            "手持式工业电锯 / 伐木链锯",
+            "手持动力锯",
+            "废土工坊 / 玩家",
+            "柴油发动机 / 电池驱动",
+            "亮红色或黄色硬质金属防护外壳，80cm长钢制锯条导板，上方带有前双手横握把与后手柄拉绳启动器，机身侧面带有散热网格与柴油/润滑油加注口。",
+            "早期伐木与近战突击乱战神器，转速高、锯齿密，在丧尸浪潮近战肉搏中具有极强的威慑力。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-017_views_v1.png"
+      },
+      "detail_source": [
+        "Super Axe（141）",
+        "近战/斧",
+        "伤害 30、砍树 40，长按可连续劈树。",
+        "机械动力斧，斧头带齿轮与蒸汽管，柄部有扳机与排气口，启动时喷白汽。",
+        "蒸汽动力斧、工业破拆斧。",
+        "13.1 §5.1",
+        "P1"
+      ]
+    },
+    {
+      "category": "melee",
+      "index": 17,
+      "refs": "C1",
+      "target": "热熔裁切长刃",
+      "branch": "刀剑系",
+      "rank": 5,
+      "adaptation": "热熔斧技术长刃改型；圣光作用需在玩法中重解释",
+      "visual": "White-grey tactical long cleaver, solid dark blade with thin warm red-white thermal edge, integrated blocky power guard, subtle amber status bar; no religious symbols.",
+      "id": "MEL-018",
+      "original": "Holy Sword（147）",
+      "original_features": "伤害 60，圣光范围 15",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.1",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 1,
+          "name": "“热熔切割斧”（热熔破拆斧 / 玩家昵称“黑切” / “破甲斧”）",
+          "cells": [
+            "1",
+            "“热熔切割斧”（热熔破拆斧 / 玩家昵称“黑切” / “破甲斧”）",
+            "热熔动力战术斧",
+            "新联盟 / 老白（主力武器）",
+            "高能热熔等离子体 / 弧光切割",
+            "外观酷似战术消防破拆斧，具有粗犷的暗灰色高强度合金斧身，钝厚的斧背与宽大前斧刃结合。斧柄内置电能接口与导线，启动时斧刃边缘闪烁出猩红色的热熔等离子弧光与高温高频能量流，斧柄配有防滑高分子橡塑护套与战术挂扣。",
+            "老白抽奖获得并作为招牌武器的高阶破甲冷兵器，能瞬间热熔切开重型陶钢装甲、防空闸门与高阶异种（进化体/圣光骑士团装甲）的硬质外壳。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "近战武器/final/MEL-018_views_v1.png"
+      },
+      "detail_source": [
+        "Holy Sword（147）",
+        "近战/剑",
+        "伤害 60，圣光范围 15，对幽灵与僵尸有特效。",
+        "银白十字剑，剑身发淡金光，护手呈天使翼，柄部嵌圣徽，挥动带光尘。",
+        "圣骑士剑、驱魔圣剑。",
+        "13.1 §5.1",
+        "P1"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 0,
+      "refs": "G6",
+      "target": "警用电击枪·测试型",
+      "branch": "调试预留",
+      "rank": 0,
+      "adaptation": "9999弹匣仅调试；不作为威力排名",
+      "visual": "Compact chunky yellow/black stun sidearm, two square emitter apertures, small diagnostic panel, no real-world branding.",
+      "id": "RNG-001",
+      "original": "Toy Gun（600）",
+      "original_features": "伤害 100，弹匣 9999，疑似调试",
+      "priority": "P2",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 6,
+          "name": "警用电击枪",
+          "cells": [
+            "6",
+            "警用电击枪",
+            "非致命防暴枪",
+            "战前遗迹 / 警用",
+            "高压电击针",
+            "战前防暴警用枪械，采用高强度黄色与黑色双色工程塑料枪身，造型轻巧紧凑。枪口前端有两个显眼的高压电针发射孔与激光瞄准点，握把配有防滑橡胶垫与防脱落手绳扣，侧面带有显示屏。",
+            "战前遗迹非致命抓捕武器，通过高压电脉冲使目标神经肌肉瞬间瘫痪，电池坏后也可做防暴工具。"
+          ]
+        }
+      ],
+      "status": "调试/占位/预备",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-001_views_v1.png"
+      },
+      "detail_source": [
+        "Toy Gun（600）",
+        "远程/手枪",
+        "伤害 100、弹匣 9999 的异常调试枪，疑似开发用。",
+        "塑料感玩具手枪，亮橙/绿色枪口帽，枪身有贴纸与夸张准星。",
+        "儿童玩具枪、Nerf 风格。",
+        "13.1 §5.2",
+        "P2"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 1,
+      "refs": "G5",
+      "target": "传统转轮手枪",
+      "branch": "手枪主线",
+      "rank": 1,
+      "adaptation": "保持基础6发副武器",
+      "visual": "Simple blued steel six-chamber revolver, modest straight barrel, brown wood grip, plain iron sights; no bullets or labels.",
+      "id": "RNG-002",
+      "original": "Revolver（601）",
+      "original_features": "伤害 40，6 发",
+      "priority": "P0",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 5,
+          "name": "传统左轮手枪",
+          "cells": [
+            "5",
+            "传统左轮手枪",
+            "传统转轮手枪",
+            "荒野通用",
+            "多种转轮弹药",
+            "经典复古的6发转轮枪身，整体为哑光黑或发蓝钢制枪管。6孔可旋转弹巢裸露于机匣中央，握把多为深色木质或黑色橡胶防滑护板，击锤突出于套筒后方，枪管平直拉长，呈纯粹的机械质感。",
+            "故障率极低，即使在极度恶劣风沙环境下也能稳定击发，废土客与老猎手喜爱的随身副武器。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-002_views_v1.png"
+      },
+      "detail_source": [
+        "Revolver（601）",
+        "远程/左轮",
+        "伤害 40，6 发弹巢，装填 1 秒，基础远程武器。",
+        "单动左轮，长枪管、木质握把、黄铜扳机护圈，枪身有磨损与刻纹。",
+        "Colt Peacemaker、西部左轮。",
+        "13.1 §5.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 2,
+      "refs": "G16",
+      "target": "栓动铁管步枪",
+      "branch": "长枪主线",
+      "rank": 1,
+      "adaptation": "保留早期慢射步枪定位",
+      "visual": "Crude grey pipe bolt-action rifle, one bent bolt handle, rough wooden stock, dark cloth reinforcement, no cross-section or machining details.",
+      "id": "RNG-003",
+      "original": "Rifle（602）",
+      "original_features": "伤害 100，2 发",
+      "priority": "P0",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 16,
+          "name": "9mm 栓动式铁管步枪",
+          "cells": [
+            "16",
+            "9mm 栓动式铁管步枪",
+            "栓动铁管步枪",
+            "巨石城 / 荒野作坊",
+            "9mm 步枪弹 / 手枪弹",
+            "枪管由无缝厚壁铁管车削而成，手动旋转后拉式枪栓。枪身衬在粗糙削平的硬木枪托上，用螺丝和黑胶带固定，没有护木，枪口处有手工锉刀打磨痕迹，整体长达一米左右。",
+            "废土客与新手最易获得的栓动步枪，单发装填，精度尚可，为废土贸易的基础标尺。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-003_views_v1.png"
+      },
+      "detail_source": [
+        "Rifle（602）",
+        "远程/步枪",
+        "伤害 100，2 发弹仓，装填 2 秒，中距离主力。",
+        "杠杆步枪，长木托、外露弹管、金属机匣与照门，枪托有皮革贴腮。",
+        "Winchester 杠杆步枪。",
+        "13.1 §5.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 3,
+      "refs": "G27",
+      "target": "双管猎枪",
+      "branch": "近距爆发",
+      "rank": 2,
+      "adaptation": "保留两发霰弹结构",
+      "visual": "Break-action SIDE-BY-SIDE double barrel hunting shotgun, TWO wide barrels, dark steel receiver, chunky brown wood fore-end and stock.",
+      "id": "RNG-004",
+      "original": "Shotgun（603）",
+      "original_features": "伤害 200，2 发",
+      "priority": "P0",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 27,
+          "name": "双管猎枪 / 霰弹枪",
+          "cells": [
+            "27",
+            "双管猎枪 / 霰弹枪",
+            "折断式双管霰弹枪",
+            "荒野猎户 / 废土客",
+            "12 Gauge / 粗制霰弹",
+            "采用古老的折断式（Break-action）装弹结构。两条平行或上下叠放的粗大钢制枪管，中折处有开锁扳手；枪身配有深褐色实木握把与枪托，枪管金属表面带有岁月侵蚀的氧化斑点。",
+            "荒野猎人与老流民的经典防身武器，双发近距离喷射威力毁灭性极大。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-004_views_v1.png"
+      },
+      "detail_source": [
+        "Shotgun（603）",
+        "远程/霰弹枪",
+        "伤害 200，2 发，近距离高爆发。",
+        "双管霰弹枪，粗枪管、木质前护木与枪托，枪口有扩口，弹壳外露。",
+        "双管猎枪、西部 coach gun。",
+        "13.1 §5.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 4,
+      "refs": "G31",
+      "target": "高斯精确狙击步枪",
+      "branch": "长枪预备",
+      "rank": 5,
+      "adaptation": "原无预制体与明确参数；只预备美术不推断伤害",
+      "visual": "White/graphite electromagnetic sniper rifle, two long parallel accelerator rails, ONE optic and compact capacitor block, cyan seams, no ammo schematic.",
+      "id": "RNG-005",
+      "original": "SAM Rifle（604）",
+      "original_features": "无预制体/无配置，仅配置",
+      "priority": "P2",
+      "source_gdd": "13.1 §3.1、§5.2",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 31,
+          "name": "电磁 / 高斯狙击步枪",
+          "cells": [
+            "31",
+            "电磁 / 高斯狙击步枪",
+            "电磁动能狙击枪",
+            "企业 / 学院",
+            "电磁超音速穿甲弹",
+            "高斯步枪的重型远程狙击版本。两根音叉状电磁导轨延长至一米以上，导轨间交织着密集的电容冷却肋片。枪身中后部带有巨大的高压电容模块与加厚贴腮垫，顶部安装长筒状光电复合狙击镜头。",
+            "极远距离无声定点清除，电磁穿甲弹丸可穿透重型机甲护板与坚固水泥混凝土墙。"
+          ]
+        }
+      ],
+      "status": "调试/占位/预备",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-005_views_v1.png"
+      },
+      "detail_source": [
+        "SAM Rifle（604）",
+        "远程/狙击枪",
+        "仅配置的狙击步枪，无预制体与参数，需补建模。",
+        "长管狙击枪，大型瞄准镜、双脚架、木质/金属混合枪身，枪口制退器。",
+        "反器材狙击枪、西部长管猎枪。",
+        "13.1 §3.1、§5.2",
+        "P2"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 5,
+      "refs": "C20,A17",
+      "target": "蛇毒木猎弓",
+      "branch": "弓系",
+      "rank": 1,
+      "adaptation": "猎弓加封装毒箭为组合改编",
+      "visual": "Simple laminated wood hunting bow with leather centre grip, taut string, one separate matching arrow with SEALED green toxin head; keep arrow aside, no firing pose.",
+      "id": "RNG-006",
+      "original": "Toxic Bow（605）",
+      "original_features": "伤害 70，中毒",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 20,
+          "name": "废土木猎弓 / 竹木长弓",
+          "cells": [
+            "20",
+            "废土木猎弓 / 竹木长弓",
+            "传统猎弓",
+            "废土猎户 / 荒野流民",
+            "变异树木/竹片层压 / 兽筋/麻绳弦",
+            "由坚韧的变异榆木或竹片经过多层胶合烘干压制而成，弓柄包裹着粗糙的变异皮革防滑，弓弦为多股麻绳或兽筋绞合。",
+            "废土底层流民与传统猎户最基础的远射狩猎武器，造价低廉且易于自行维护。"
+          ]
+        },
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 17,
+          "name": "银嘴蛇",
+          "cells": [
+            "17",
+            "银嘴蛇",
+            "变异毒蛇",
+            "清泉市东区原始森林",
+            "身上带有银白色花纹，从唇缝延伸至眼角，毒牙基部能储存120ml剧毒毒液。",
+            "致命剧毒蛇类，攻击迅捷，毒腺遍布全身无法直接食用。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-006_views_v1.png"
+      },
+      "detail_source": [
+        "Toxic Bow（605）",
+        "远程/弓",
+        "伤害 70，命中中毒，装填 2 秒。",
+        "深色反曲弓，弓臂缠毒藤与布条，箭袋中箭矢带绿色箭头与滴液。",
+        "部落毒弓、猎毒弓。",
+        "13.1 §5.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 6,
+      "refs": "A3",
+      "target": "废土燃烧投掷瓶",
+      "branch": "投掷系",
+      "rank": 1,
+      "adaptation": "铁背猿条目提及燃烧瓶；瓶体具体外观为游戏化补全",
+      "visual": "One closed green glass game-prop bottle, wrapped brown cloth neck and orange pictogram band, NO flame, no exposed igniter, no construction diagram.",
+      "id": "RNG-007",
+      "original": "Molotov（606）",
+      "original_features": "爆炸 50，燃烧",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_creatures_catalog.md",
+          "row": 3,
+          "name": "铁背猿",
+          "cells": [
+            "3",
+            "铁背猿",
+            "变异灵长类异种",
+            "清泉市东区原始森林",
+            "身上覆盖黑色毛发，最显著特征是背部生长着一层黑色的硬质防弹鳞片，双臂长而强壮。",
+            "群居活动，智商较高，能使用弓箭、长矛、燃烧瓶等简易工具，擅长丛林放冷箭与高空机动。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-007_views_v1.png"
+      },
+      "detail_source": [
+        "Molotov（606）",
+        "投掷/燃烧瓶",
+        "爆炸 50 并附加燃烧，投掷力度 125。",
+        "玻璃瓶装深色液体，瓶口塞燃烧布条，瓶身贴旧标签，点燃后火焰跳动。",
+        "莫洛托夫鸡尾酒。",
+        "13.1 §5.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 7,
+      "refs": "G28",
+      "target": "联合收割机轻机枪",
+      "branch": "持续火力",
+      "rank": 4,
+      "adaptation": "以弹鼓轻机枪代替加特林；射速/弹药动画需适配",
+      "visual": "Chunky dark steel light machine gun, long ribbed barrel, round drum magazine, folded compact bipod and brown reinforced stock, no tripod or loose cartridges.",
+      "id": "RNG-008",
+      "original": "Gatling（607）",
+      "original_features": "10×15，弹匣 504",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 28,
+          "name": "LD-47j “联合收割机”",
+          "cells": [
+            "28",
+            "LD-47j “联合收割机”",
+            "班用轻机枪",
+            "新联盟 / 404号避难所",
+            "7mm / 7.62mm 弹鼓",
+            "基于LD-47机匣强化的班用轻机枪。换装了加厚加长的重型散热枪管，枪口装有大型圆筒形制退器；前护木下方装有重型折叠两脚架，底部挂载着一个沉甸甸的75发圆形金属或塑料大弹鼓。",
+            "新联盟步兵班的核心火力支柱，大容量弹鼓可持续输出密集火力扫射敌人。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-008_views_v1.png"
+      },
+      "detail_source": [
+        "Gatling（607）",
+        "远程/加特林",
+        "10×15 伤害，弹匣 504，每发 10 弹丸，高射速重武器。",
+        "多管旋转机枪，6 根枪管、曲柄/电机、弹药箱与弹链，枪身有蒸汽管与散热孔。",
+        "加特林机枪、蒸汽朋克重机枪。",
+        "13.1 §5.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 8,
+      "refs": "G34",
+      "target": "地精肩托火箭筒",
+      "branch": "范围重火力",
+      "rank": 3,
+      "adaptation": "炸弹改为肩托火箭筒；须新增肩扛动画和飞行爆炸投射物",
+      "visual": "Stylized shoulder launcher with dark tube, olive insulated middle, broad stylized inert nose cone, small side sight and rear flared exhaust, no cutaway or ammunition dimensions.",
+      "id": "RNG-009",
+      "original": "Bomb（608）",
+      "original_features": "伤害 100，半径 30",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 34,
+          "name": "地精火箭筒 / RPG-7",
+          "cells": [
+            "34",
+            "地精火箭筒 / RPG-7",
+            "单兵便携火箭筒",
+            "新联盟（玩家） / 通用",
+            "40mm 破甲/高爆弹",
+            "经典的单兵发射管造型。中间为粗大的钢制发射管，中后部包裹着防止烫伤的木质或塑料隔热护套；前端插入一颗硕大的超口径破甲/高爆火箭弹头（呈木槌状），后部带有喇叭状喷气尾喷口，配简易瞄具。",
+            "玩家“蚊子”及废土客最喜爱的单兵反装甲/攻坚神器，尾气喷射剧烈，破甲效果极佳。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-009_views_v1.png"
+      },
+      "detail_source": [
+        "Bomb（608）",
+        "投掷/炸弹",
+        "伤害 100、半径 30、3 秒延迟，范围清怪。",
+        "圆形铁壳炸弹，引信带火花，表面有危险条纹与铆钉，握持处缠布。",
+        "西部炸药包、卡通炸弹。",
+        "13.1 §5.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 9,
+      "refs": "G4",
+      "target": "银蛇精密左轮",
+      "branch": "手枪主线",
+      "rank": 2,
+      "adaptation": "精装副武器对应伤害80；弹巢规格按游戏配置适配",
+      "visual": "Refined silver revolver, black grip, short upper tactical sight rail, subtle snake-scale grip pattern, compact muzzle, no engraving text.",
+      "id": "RNG-010",
+      "original": "Peacekeeper Revolver（609）",
+      "original_features": "伤害 80，8 发",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 4,
+          "name": "“银蛇”左轮手枪",
+          "cells": [
+            "4",
+            "“银蛇”左轮手枪",
+            "精致转轮手枪",
+            "废土客 / 高级佣兵",
+            "9mm / .357 弹药",
+            "枪身采用高精度抛光的不锈钢镀银工艺，在日光下闪烁着银白色金属光泽。枪管上方配有可伸缩的微型皮卡汀尼战术导轨，挂载红点瞄准镜或激光指示器。枪把为镶嵌黑檀木的精致握把，枪管侧面刻有蛇鳞防滑纹。",
+            "结构极度可靠，6发转轮弹巢不卡壳，外观奢华兼具战术扩展性，为管理者及高级佣兵的标志性佩枪。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-010_views_v1.png"
+      },
+      "detail_source": [
+        "Peacekeeper Revolver（609）",
+        "远程/左轮",
+        "伤害 80，8 发，射速 0.3 秒，精装左轮。",
+        "长管镀银左轮，雕花机匣、象牙握把、金色扳机，枪口有制退孔。",
+        "西部精品左轮、收藏枪。",
+        "13.1 §5.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 10,
+      "refs": "C2",
+      "target": "破晓机械复合弓·低温箭型",
+      "branch": "弓系",
+      "rank": 3,
+      "adaptation": "电驱弓原文；低温箭头为控制玩法改编",
+      "visual": "Graphite/titanium compound bow, exactly two end cams and compact battery grip, small sight, ONE separate arrow with cyan cold-tech collar; no crystal ice bow.",
+      "id": "RNG-011",
+      "original": "Ice Bow（610）",
+      "original_features": "伤害 70，冰冻",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/cold_and_powered_weapons_catalog.md",
+          "row": 2,
+          "name": "“破晓”机械复合弓",
+          "cells": [
+            "2",
+            "“破晓”机械复合弓",
+            "电驱机械复合弓",
+            "新联盟 / 方长（主力武器）",
+            "电池供电 / 齿轮电驱滑轮 / 200磅满拉力",
+            "枪灰色钛合金弓身与碳纤维复合弓臂，中央带有可变焦距的带刻度全息/红点瞄具。弓身滑轮组连接着微型电驱电机与电池插槽，按压开关即可启动电驱滑轮赋能，松弦瞬间爆发上百至两百磅的恐怖动能，整弓充满高科技机械美感。",
+            "方长在高级盲盒抽中的神级远程抛射武器，电驱协助拉弦与赋能，箭矢初速极高，近距离一箭可将啃食者或爬行者头骨直接打爆。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-011_views_v1.png"
+      },
+      "detail_source": [
+        "Ice Bow（610）",
+        "远程/弓",
+        "伤害 70，命中冰冻，装填 2 秒。",
+        "冰蓝色反曲弓，弓臂覆冰晶，弓弦发白光，箭矢为冰锥。",
+        "冰霜弓、水晶弓。",
+        "13.1 §5.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 11,
+      "refs": "G24",
+      "target": "Pu-9紧凑冲锋枪",
+      "branch": "自动手枪侧支",
+      "rank": 3,
+      "adaptation": "替换四管手枪；连发方式和握持须适配",
+      "visual": "Compact angular charcoal submachine gun, short barrel, straight box magazine and folded wire stock, simple iron sights, no four-barrel assembly.",
+      "id": "RNG-012",
+      "original": "Four-Barrel Pistol（611）",
+      "original_features": "30/发，12 发",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 24,
+          "name": "Pu-9 冲锋枪",
+          "cells": [
+            "24",
+            "Pu-9 冲锋枪",
+            "战壕冲锋枪",
+            "军团（威兰特人）",
+            "9mm 手枪弹",
+            "枪身短小紧凑，呈方正的哑光黑色冲压钢件结构。配备可向右折叠的钢丝枪托，握把与枪身一体化成型，拉机柄位于机匣左上方。前护木极短带有锯齿防滑纹，采用20/30发垂直直立手枪弹匣。",
+            "军团战壕扫荡与室内近战冲锋枪，射速极快，操控性优异，50米内压制力惊人。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-012_views_v1.png"
+      },
+      "detail_source": [
+        "Four-Barrel Pistol（611）",
+        "远程/手枪",
+        "30/发，12 发弹匣，四管齐射。",
+        "四根短枪管并排的手枪，厚重枪身、木质握把，枪口呈 2×2 排列，机械感强。",
+        "四管手枪、德林加变体。",
+        "13.1 §5.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 12,
+      "refs": "G35",
+      "target": "旋风转轮榴弹发射器",
+      "branch": "范围重火力",
+      "rank": 4,
+      "adaptation": "可复用燃烧瓶改为可补给多发发射器；非自动继承原逻辑",
+      "visual": "Portable short-barrel grenade launcher, oversized six-lobed cylinder, vertical foregrip and folded skeleton shoulder stock, dark grey/olive with orange hazard inset, no loose grenades.",
+      "id": "RNG-013",
+      "original": "Reusable Molotov（613）",
+      "original_features": "可复用燃烧瓶，容量 5→10",
+      "priority": "P2",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 35,
+          "name": "“旋风” / “火龙果”榴弹发",
+          "cells": [
+            "35",
+            "“旋风” / “火龙果”榴弹发",
+            "便携转轮榴弹枪",
+            "新联盟 / 巨石城",
+            "40mm 高爆/燃烧榴弹",
+            "基于转轮结构的便携榴弹枪。枪身中央是一个大号的6发圆形转轮弹巢，前后带有粗短的40mm大口径枪管与前垂直握把；配备可折叠的金属框式枪托，顶部配有倾斜补偿式的立框榴弹瞄准镜。",
+            "狼骑兵及重装步兵便携火器，连续扣动扳机可倾泻6发高爆/燃烧榴弹，形成小型炮火覆盖。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-013_views_v1.png"
+      },
+      "detail_source": [
+        "Reusable Molotov（613）",
+        "投掷/燃烧瓶",
+        "可复用燃烧瓶，容量 5→10，2 级燃烧伤害 15。",
+        "与 606 类似但瓶身有金属加固套与可重复使用的陶瓷塞，瓶身更厚。",
+        "可复用燃烧弹。",
+        "13.1 §5.2",
+        "P2"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 13,
+      "refs": "G12",
+      "target": "黑天鹅G9无托步枪",
+      "branch": "自动火力",
+      "rank": 4,
+      "adaptation": "原蒸汽左轮升级为企业步枪；动画/射击频率需调整",
+      "visual": "Sleek compact black/grey BULLPUP rifle, magazine clearly BEHIND grip, integrated small optic, clean composite angular panels, no glowing energy barrel.",
+      "id": "RNG-014",
+      "original": "Boilerheart Revolver（614）",
+      "original_features": "伤害 110，蒸汽左轮",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.2",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 12,
+          "name": "“黑天鹅”G9 突击步枪",
+          "cells": [
+            "12",
+            "“黑天鹅”G9 突击步枪",
+            "高阶无托突击步枪",
+            "企业（银翼集团）",
+            "X-4 高能装药特别弹",
+            "典型的企业高科技欧式无托（Bullpup）结构设计，弹匣位于握把后方。枪身采用优雅流畅的黑灰色碳纤维与高分子复合材料，机匣侧面刻有企业高光标志。顶部配有集成式红点/全息瞄具与全长导轨。",
+            "企业开拓者与高阶雇佣兵配枪，配套装药添加X-4纤维的高能子弹，枪口初速极高，造型充满科幻感。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-014_views_v1.png"
+      },
+      "detail_source": [
+        "Boilerheart Revolver（614）",
+        "远程/左轮",
+        "伤害 110，8 发，蒸汽武器分支，装填 2.2 秒。",
+        "蒸汽朋克左轮，枪管带压力表与铜管，枪身有锅炉圆筒，开火喷白汽，握把缠红皮。",
+        "蒸汽朋克转轮枪、工业左轮。",
+        "13.1 §5.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 14,
+      "refs": "G30",
+      "target": "15式刺针高斯步枪",
+      "branch": "长枪主线",
+      "rank": 5,
+      "adaptation": "终极工坊产物以电磁技术表达；三部件拆装需新模块",
+      "visual": "White/graphite gauss rifle, distinctive TWO parallel tuning-fork accelerator rails, small cyan seams, detachable battery-shaped block and integral optic, clear separate stock/receiver/barrel masses.",
+      "id": "RNG-015",
+      "original": "Iron Verdict Rifle（615）",
+      "original_features": "伤害 180，穿透 4，射程 300",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.2；03.2a2 §4.5",
+      "source_rows": [
+        {
+          "file": "tmp/firearms_and_weapons_catalog.md",
+          "row": 30,
+          "name": "15式“刺针”高斯步枪",
+          "cells": [
+            "30",
+            "15式“刺针”高斯步枪",
+            "电磁动能步枪",
+            "企业 / 战前人联",
+            "电磁加速质量弹",
+            "战前高端电磁动能枪械。枪管呈现特殊的两根平行音叉状（线圈电磁导轨），枪身由哑光白色与深灰色高分子复合绝缘材料构成，中间穿插着发光的超导能量线缆。枪托内部内置微型电池插槽，顶部集成全息瞄具。",
+            "电磁线圈加速质量弹，击发无火光无烟雾，仅有刺耳电弧破空声，超音速弹丸穿透力极强。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-015_views_v1.png"
+      },
+      "detail_source": [
+        "Iron Verdict Rifle（615）",
+        "远程/步枪",
+        "伤害 180，穿透 4 目标、射程 300，开火积热、过热 4 秒，工坊终极产物。",
+        "长管重型步枪，三部分拼装：粗枪管带散热环、机械枪身带压力表、厚重枪托；黄铜与深铁配色。",
+        "蒸汽朋克狙击步枪、铁路步枪。",
+        "13.1 §5.2；03.2a2 §4.5",
+        "P1"
+      ]
+    },
+    {
+      "category": "ranged",
+      "index": 15,
+      "refs": "E41",
+      "target": "火炬心灵干涉投掷罐",
+      "branch": "特殊控制",
+      "rank": 4,
+      "adaptation": "银白扣件放大为投掷罐的组合改型；幽灵改题材效果需开发",
+      "visual": "Palm-sized silver cylindrical pulse capsule with round blue crystal inset, compact ribbed collar, no cross/religious symbol, closed shell, no cutaway or explosive assembly.",
+      "id": "RNG-016",
+      "original": "Holy Water（612）",
+      "original_features": "伤害 100/150，可伤幽灵",
+      "priority": "P1",
+      "source_gdd": "13.1 §5.3",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 41,
+          "name": "“火炬”心灵干涉仪",
+          "cells": [
+            "41",
+            "“火炬”心灵干涉仪",
+            "随身战术终端与感应设备",
+            "火炬教会",
+            "银白圆形扣件 / 微型晶振",
+            "银白色金属圆形扣件，中央嵌入微型晶振与蓝光指示灯。",
+            "发射抵消磁场，抵御寄生黏菌或精神系异种的心灵污染与幻觉。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "远程与投掷武器/final/RNG-016_views_v1.png"
+      },
+      "detail_source": [
+        "Holy Water（612）",
+        "投掷/圣水",
+        "伤害 100/150，可命中幽灵，容量 2/5，范围 10/15。",
+        "玻璃圣水瓶，银色瓶盖与十字架封蜡，瓶内液体发淡金光，瓶身刻经文。",
+        "驱魔圣水、仪式水瓶。",
+        "13.1 §5.3",
+        "P1"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 0,
+      "refs": "F1",
+      "target": "羊角薯",
+      "branch": "基础采集",
+      "rank": 1,
+      "adaptation": "替代胡萝卜；同为低阶块根",
+      "visual": "One curved ram-horn-shaped grey-brown tuber, knobby matte skin and two small sprouts; whole plant root only, no plate.",
+      "id": "FOD-001",
+      "original": "216 Carrot",
+      "original_features": "饱食 15",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 1,
+          "name": "羊角薯",
+          "cells": [
+            "1",
+            "废土主食",
+            "羊角薯",
+            "废土栽培块茎",
+            "呈弯曲羊角状的灰褐色块茎，表皮粗糙、带有凹凸不平的节理与芽眼，切开后内部呈灰白色湿润薯肉。",
+            "废土最核心的主粮，可蒸煮、烘烤或捣制成羊角薯泥，口感类似土豆，为废土客一日两餐的生命支柱。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-001_views_v1.png"
+      },
+      "detail_source": [
+        "216 Carrot",
+        "蔬菜",
+        "饱食 15，可烧烤，农田/采集获得。",
+        "橙色胡萝卜，带绿色缨叶，表面有泥土与横向纹路。",
+        "新鲜胡萝卜。",
+        "13.1 §4.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 1,
+      "refs": "F18",
+      "target": "鬣狗生肉块",
+      "branch": "普通肉生熟链",
+      "rank": 1,
+      "adaptation": "食材图画切块而非原文属主动物",
+      "visual": "One chunky raw dusky pink meat cut with a small cream fat seam, stylized clean food prop, no blood, no animal body, no plate.",
+      "id": "FOD-002",
+      "original": "217 Meat",
+      "original_features": "饱食 15，烧烤→224",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 18,
+          "name": "变异鬣狗肉",
+          "cells": [
+            "18",
+            "兽肉食材",
+            "变异鬣狗肉",
+            "属主：变异鬣狗",
+            "体型如成狼，前高后低，前肢粗壮，全身毛发稀疏斑秃带有脓包溃疡，嘴角张开露出一排参差不齐的黄色尖牙。",
+            "肉质偏柴且带有腥膻味，但分布广易猎取，常腌制成风干肉、熏肉或肉干。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-002_views_v1.png"
+      },
+      "detail_source": [
+        "217 Meat",
+        "生肉",
+        "饱食 15，烤后变熟肉。",
+        "生肉块，粉红肌理与白色脂肪，带血水，放在木板上或串在签上。",
+        "生牛肉/兽肉。",
+        "13.1 §4.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 2,
+      "refs": "F10,F52",
+      "target": "菌菇薯泥炖汤",
+      "branch": "汤品支线",
+      "rank": 3,
+      "adaptation": "设定食材组合成汤为菜谱改编；饱食100保留为原参数",
+      "visual": "One simple dented grey metal bowl of beige stew with TWO mushroom chunks and cubed tuber, minimal steam, no spoon or table.",
+      "id": "FOD-003",
+      "original": "218 Soup",
+      "original_features": "饱食 100",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 10,
+          "name": "野生松茸 / 变异平菇",
+          "cells": [
+            "10",
+            "真菌采摘",
+            "野生松茸 / 变异平菇",
+            "松林/湿地腐木",
+            "生长在湿地与松林腐木上的灰褐色伞状蘑菇，菌盖平展光滑，菌柄粗壮白色。",
+            "无毒安全的可食用真菌，煮汤、炒食味道极鲜。"
+          ]
+        },
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 52,
+          "name": "羊角薯泥 / 土豆泥",
+          "cells": [
+            "52",
+            "加工速食",
+            "羊角薯泥 / 土豆泥",
+            "薯类蒸熟捣碎",
+            "蒸熟羊角薯捣碎成的淡黄色绵密泥状膏体，淋有黑色酱油或黄油。",
+            "口感绵密，加盐和酱油调味，为玩家与据点热门美食。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-003_views_v1.png"
+      },
+      "detail_source": [
+        "218 Soup",
+        "汤",
+        "饱食 100，锅具产出。",
+        "木碗/铁碗盛浓汤，汤面有油花与蔬菜块，冒热气。",
+        "西部炖菜、浓汤。",
+        "13.1 §4.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 3,
+      "refs": "F17",
+      "target": "双头牛生牛排",
+      "branch": "牛排生熟链",
+      "rank": 1,
+      "adaptation": "来源双头牛，图为切片不是双头动物",
+      "visual": "One thick red-pink faceted raw steak with broad cream fat border, simple marbling, no blood, no whole animal, no plate.",
+      "id": "FOD-004",
+      "original": "221 Steak",
+      "original_features": "饱食 20，烧烤→225",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 17,
+          "name": "双头牛肉",
+          "cells": [
+            "17",
+            "兽肉食材",
+            "双头牛肉",
+            "属主：双头牛",
+            "体型庞大如小山（肩高近两米），并排长有两个粗壮畸形的牛头，四眼相对，背部隆起厚重的脂肪驼峰，皮毛稀疏。",
+            "废土最主要的大型家畜肉，富含脂肪，可做牛排、炖肉、烤肉干及炼牛脂。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-004_views_v1.png"
+      },
+      "detail_source": [
+        "221 Steak",
+        "生肉",
+        "饱食 20，烤后变熟牛排。",
+        "厚切生牛排，红肉带白色脂肪边，表面有盐粒与黑胡椒。",
+        "生牛排。",
+        "13.1 §4.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 4,
+      "refs": "F18,F46",
+      "target": "炭烤鬣狗肉",
+      "branch": "普通肉生熟链",
+      "rank": 2,
+      "adaptation": "217→224沿用肉块轮廓与脂肪位置",
+      "visual": "One cooked dark brown meat cut, same chunky silhouette and cream fat seam as raw hyena meat, TWO grill marks, no raw flesh, no plate.",
+      "id": "FOD-005",
+      "original": "224 Cooked Meat",
+      "original_features": "饱食 30，缺预制体",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 18,
+          "name": "变异鬣狗肉",
+          "cells": [
+            "18",
+            "兽肉食材",
+            "变异鬣狗肉",
+            "属主：变异鬣狗",
+            "体型如成狼，前高后低，前肢粗壮，全身毛发稀疏斑秃带有脓包溃疡，嘴角张开露出一排参差不齐的黄色尖牙。",
+            "肉质偏柴且带有腥膻味，但分布广易猎取，常腌制成风干肉、熏肉或肉干。"
+          ]
+        },
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 46,
+          "name": "风干肉 / 腊肉 / 熏肉",
+          "cells": [
+            "46",
+            "储备肉类",
+            "风干肉 / 腊肉 / 熏肉",
+            "肉类腌制烟熏",
+            "经盐腌制或柴火烟熏后，呈深褐色或焦黑色硬梆梆的肉块，表面带有白色盐霜。",
+            "风干腌制，能保存数月甚至越冬，废土出行必备干粮。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-005_views_v1.png"
+      },
+      "detail_source": [
+        "224 Cooked Meat",
+        "熟食",
+        "饱食 30，由 217 烧烤，缺独立预制体。",
+        "焦褐色熟肉块，表面有烤痕与油光，插在木签上。",
+        "烤肉串。",
+        "13.1 §4.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 5,
+      "refs": "F17,F35",
+      "target": "黄油烤双头牛牛排",
+      "branch": "牛排生熟链",
+      "rank": 2,
+      "adaptation": "221→225保留牛排截面形状",
+      "visual": "One brown grilled steak with thick golden fat rim, TWO diagonal grill marks and ONE tiny butter cube on top, no plate.",
+      "id": "FOD-006",
+      "original": "225 Cooked Steak",
+      "original_features": "饱食 40，缺预制体",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 17,
+          "name": "双头牛肉",
+          "cells": [
+            "17",
+            "兽肉食材",
+            "双头牛肉",
+            "属主：双头牛",
+            "体型庞大如小山（肩高近两米），并排长有两个粗壮畸形的牛头，四眼相对，背部隆起厚重的脂肪驼峰，皮毛稀疏。",
+            "废土最主要的大型家畜肉，富含脂肪，可做牛排、炖肉、烤肉干及炼牛脂。"
+          ]
+        },
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 35,
+          "name": "黄油",
+          "cells": [
+            "35",
+            "食用油",
+            "黄油",
+            "奶脂打制",
+            "呈固态乳黄色油脂块，质地柔软滑腻，奶香浓郁。",
+            "用双头牛奶或骆驼奶打制，用于烘焙面包或煎烤牛排。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-006_views_v1.png"
+      },
+      "detail_source": [
+        "225 Cooked Steak",
+        "熟食",
+        "饱食 40，由 221 烧烤，缺独立预制体。",
+        "厚切熟牛排，外焦里嫩，表面有网格烤痕，配一小块黄油。",
+        "西式牛排。",
+        "13.1 §4.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 6,
+      "refs": "F14,F28",
+      "target": "松子鲜鱼汤",
+      "branch": "汤品支线",
+      "rank": 4,
+      "adaptation": "优质汤配方，资料中有明确菜名",
+      "visual": "One white ceramic bowl of clear golden fish soup, two small fish chunks and THREE pine nuts, tiny herb sprig, no whole fish or cutlery.",
+      "id": "FOD-007",
+      "original": "226 Perfect Soup",
+      "original_features": "饱食 120",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 14,
+          "name": "松子",
+          "cells": [
+            "14",
+            "野外采摘",
+            "松子",
+            "变异针叶松",
+            "坚硬的棕褐色木质松果鳞片内包育的椭圆形硬壳松子，去壳后内部为白色富含油脂的种仁。",
+            "坚果类食材，富含油脂，可直接食用或用于做“松子鲜鱼汤”。"
+          ]
+        },
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 28,
+          "name": "水水鱼肉",
+          "cells": [
+            "28",
+            "水产食材",
+            "水水鱼肉",
+            "属主：水水鱼 / 变异湖鱼",
+            "栖息于菱湖与河道的变异淡水鱼，体长半米至一米，全身覆盖灰蓝色粗糙鳞片，鱼鳍边缘化为硬刺，内长尖牙。",
+            "菱湖与清泉市水域捕捞的淡水鱼，用于清蒸、红烧或炖松子鲜鱼汤。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-007_views_v1.png"
+      },
+      "detail_source": [
+        "226 Perfect Soup",
+        "汤",
+        "饱食 120，锅具完美产出。",
+        "精致陶碗浓汤，顶部有香草、奶油漩涡与肉块，热气明显。",
+        "高级炖汤。",
+        "13.1 §4.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 7,
+      "refs": "F3",
+      "target": "变异玉米棒",
+      "branch": "高能作物",
+      "rank": 2,
+      "adaptation": "替代南瓜；饱食100沿用原游戏不归因真实营养",
+      "visual": "One thick yellow-brown corn cob with broad stylized kernels and TWO green husk leaves peeled back, matte faceted game prop.",
+      "id": "FOD-008",
+      "original": "231 Pumpkin",
+      "original_features": "饱食 100",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 3,
+          "name": "变异玉米",
+          "cells": [
+            "3",
+            "废土主食",
+            "变异玉米",
+            "平原农庄作物",
+            "硕大的玉米棒，包裹着粗糙的变异苞叶，玉米粒呈现深黄色与棕色交错的抗辐射斑纹，颗粒饱满硬实。",
+            "产量极高，可磨成玉米面做饼、煮玉米粥、烘烤或作农场饲料。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-008_views_v1.png"
+      },
+      "detail_source": [
+        "231 Pumpkin",
+        "蔬菜",
+        "饱食 100，随机池获得。",
+        "橙色大南瓜，带藤蔓与卷须，表面有纵向沟槽，蒂部干燥。",
+        "万圣节南瓜。",
+        "13.1 §4.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 8,
+      "refs": "F15",
+      "target": "变异椰果",
+      "branch": "高能作物",
+      "rank": 2,
+      "adaptation": "替代西瓜；补水与食用定位",
+      "visual": "One round brown fibrous coconut with flat cream exposed top showing white flesh and pale clear centre, small green leaf fragment; no straw.",
+      "id": "FOD-009",
+      "original": "232 Watermelon",
+      "original_features": "饱食 100",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 15,
+          "name": "椰子 / 变异椰果",
+          "cells": [
+            "15",
+            "野外采摘",
+            "椰子 / 变异椰果",
+            "热带椰树",
+            "球形粗糙的深棕色纤维外壳，内有坚硬的木质壳，包育着清亮椰汁与厚实的白色椰肉。",
+            "海涯行省与南方沿海特产，饮用椰汁、食用椰肉或榨取椰浆。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-009_views_v1.png"
+      },
+      "detail_source": [
+        "232 Watermelon",
+        "蔬菜",
+        "饱食 100，随机池获得。",
+        "椭圆形西瓜，深绿条纹，带卷曲藤蔓，切面可见红瓤黑籽。",
+        "西瓜。",
+        "13.1 §4.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 9,
+      "refs": "F10",
+      "target": "野生松茸",
+      "branch": "菌菇采集链",
+      "rank": 1,
+      "adaptation": "安全可食用菇替红菇；配色不代表真实食用判断",
+      "visual": "One edible stylized mushroom, broad tan-brown cap, thick ivory stem and dark simple gills, no soil clump or pot.",
+      "id": "FOD-010",
+      "original": "234 Red Mushroom",
+      "original_features": "饱食 15，烧烤→237",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 10,
+          "name": "野生松茸 / 变异平菇",
+          "cells": [
+            "10",
+            "真菌采摘",
+            "野生松茸 / 变异平菇",
+            "松林/湿地腐木",
+            "生长在湿地与松林腐木上的灰褐色伞状蘑菇，菌盖平展光滑，菌柄粗壮白色。",
+            "无毒安全的可食用真菌，煮汤、炒食味道极鲜。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-010_views_v1.png"
+      },
+      "detail_source": [
+        "234 Red Mushroom",
+        "蘑菇",
+        "饱食 15，烤后变烤蘑菇。",
+        "红色伞盖白点蘑菇，短粗白柄，成簇生长，带泥土。",
+        "毒蝇伞造型。",
+        "13.1 §4.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 10,
+      "refs": "F12",
+      "target": "精神叶清凉包",
+      "branch": "特殊补给",
+      "rank": 2,
+      "adaptation": "精神叶只记提神镇静；解毒效果为游戏化改编而非原文事实",
+      "visual": "Small bundle of THREE dark green serrated leaves tied with cream twine, one pale BLUE circular status tag without text, no pills or real drug branding.",
+      "id": "FOD-011",
+      "original": "235 Blue Mushroom",
+      "original_features": "解毒",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 12,
+          "name": "精神叶",
+          "cells": [
+            "12",
+            "经济植物",
+            "精神叶",
+            "废土经济作物",
+            "呈长椭圆形、带有锯齿边缘的深绿色厚实叶片，晒干后叶脉清晰，揉碎后散发特殊的清凉草本香气。",
+            "具备提神与镇静功效，可泡茶、煎服或加工为废土特产。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-011_views_v1.png"
+      },
+      "detail_source": [
+        "235 Blue Mushroom",
+        "解毒蘑菇",
+        "饱食 15，可解毒。",
+        "蓝色发光伞盖，白色菌褶，柄部半透明，周围有微光孢子。",
+        "奇幻蓝蘑菇。",
+        "13.1 §4.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 11,
+      "refs": "F9",
+      "target": "蓝伞菇",
+      "branch": "有毒资源",
+      "rank": 1,
+      "adaptation": "蓝色天使在设定中有毒；明确不与原解毒蓝菇混淆",
+      "visual": "One deep BLUE glowing mushroom with broad cap, pale thin stem, subtle dark cap spots, no green fog, no cartoon smiling face.",
+      "id": "FOD-012",
+      "original": "236 Green Mushroom",
+      "original_features": "有毒",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 9,
+          "name": "蓝伞菇 (蓝色天使)",
+          "cells": [
+            "9",
+            "真菌采摘",
+            "蓝伞菇 (蓝色天使)",
+            "废墟/水蛭巢穴共生菌",
+            "伞盖呈幽蓝色、在黑暗中散发着微弱冷蓝色荧光的真菌，菌柄纤细灰白，菌盖下带有密集菌褶。",
+            "生吃有剧毒（致幻并导致黏菌腐化），但经高温高压去毒后可提炼化工原料与特种食材。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-012_views_v1.png"
+      },
+      "detail_source": [
+        "236 Green Mushroom",
+        "毒蘑菇",
+        "饱食 15，但有毒。",
+        "墨绿色伞盖，表面有黏液与斑点，菌褶暗黄，靠近有绿色雾气。",
+        "毒蘑菇。",
+        "13.1 §4.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 12,
+      "refs": "F10",
+      "target": "炭烤松茸串",
+      "branch": "菌菇采集链",
+      "rank": 2,
+      "adaptation": "234→237视觉生熟；其他菇转换须单独审查",
+      "visual": "THREE toasted brown mushroom caps on ONE short wooden skewer, browned edges and cream stems, clean food prop, no plate.",
+      "id": "FOD-013",
+      "original": "237 Roasted Mushrooms",
+      "original_features": "饱食 30，缺预制体",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 10,
+          "name": "野生松茸 / 变异平菇",
+          "cells": [
+            "10",
+            "真菌采摘",
+            "野生松茸 / 变异平菇",
+            "松林/湿地腐木",
+            "生长在湿地与松林腐木上的灰褐色伞状蘑菇，菌盖平展光滑，菌柄粗壮白色。",
+            "无毒安全的可食用真菌，煮汤、炒食味道极鲜。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-013_views_v1.png"
+      },
+      "detail_source": [
+        "237 Roasted Mushrooms",
+        "熟食",
+        "饱食 30，由三种蘑菇烧烤，缺独立预制体。",
+        "串在木签上的烤蘑菇，伞盖焦黄，刷有油脂，冒热气。",
+        "烤蘑菇串。",
+        "13.1 §4.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 13,
+      "refs": "F27",
+      "target": "裂爪蟹肉浓汤",
+      "branch": "汤品支线",
+      "rank": 4,
+      "adaptation": "番茄汤改为高级水产汤，配方为改编",
+      "visual": "One simple white ceramic bowl of creamy pale orange crab soup with THREE white crab chunks and tiny orange roe garnish, no crab body, no utensils.",
+      "id": "FOD-014",
+      "original": "238 TomatoSoup",
+      "original_features": "饱食 120",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 27,
+          "name": "裂爪蟹肉与蟹黄",
+          "cells": [
+            "27",
+            "水产食材",
+            "裂爪蟹肉与蟹黄",
+            "属主：裂爪蟹",
+            "体型达一至三米的庞大水生甲壳生物，背壳呈厚重灰白色钙镁矿物与几丁质复合层，前端拥有一对可捏碎钢铁的巨大双钳。",
+            "水生甲壳顶级食材，肉质紧致Q弹，蟹黄香浓，极受高档餐厅与玩家喜爱。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-014_views_v1.png"
+      },
+      "detail_source": [
+        "238 TomatoSoup",
+        "汤",
+        "饱食 120，随机池/锅具产出。",
+        "红色番茄浓汤，白瓷碗，表面有奶油拉花与罗勒叶。",
+        "番茄浓汤。",
+        "13.1 §4.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 14,
+      "refs": "F24",
+      "target": "黑鸟鲜禽肉",
+      "branch": "禽肉生熟链",
+      "rank": 1,
+      "adaptation": "239→240用鸟肉截块；不复刻乌鸦整只外观",
+      "visual": "One clean pink poultry breast-and-leg cut with one small cream bone end, stylized low-poly food prop, no feathers, no blood, no whole bird.",
+      "id": "FOD-015",
+      "original": "239 Turkey",
+      "original_features": "饱食 40，烧烤→240",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 24,
+          "name": "变异鸟肉 / 鸟蛋",
+          "cells": [
+            "24",
+            "禽类食材",
+            "变异鸟肉 / 鸟蛋",
+            "属主：辐射乌鸦 / 黑鸟",
+            "展翅达两米宽的变异巨型飞禽，全身覆盖墨黑色羽毛，鸟喙如铁钩般锐利，双眼混浊红光；巢中产青斑点硬壳鸟蛋。",
+            "禽肉可柴火烤食；鸟蛋可煮食、煎炒或做鸟蛋汤。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-015_views_v1.png"
+      },
+      "detail_source": [
+        "239 Turkey",
+        "生肉",
+        "饱食 40，烤后变烤火鸡。",
+        "去毛生火鸡，浅粉皮肤，带翅腿，放在烤盘或吊钩上。",
+        "生火鸡。",
+        "13.1 §4.2",
+        "P0"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 15,
+      "refs": "F24",
+      "target": "柴火烤黑鸟肉",
+      "branch": "禽肉生熟链",
+      "rank": 2,
+      "adaptation": "保持239→240同轮廓",
+      "visual": "One golden-brown cooked poultry breast-and-leg cut with same small cream bone end as raw, two subtle char marks, no plate.",
+      "id": "FOD-016",
+      "original": "240 Roast Turkey",
+      "original_features": "饱食 80，缺预制体",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 24,
+          "name": "变异鸟肉 / 鸟蛋",
+          "cells": [
+            "24",
+            "禽类食材",
+            "变异鸟肉 / 鸟蛋",
+            "属主：辐射乌鸦 / 黑鸟",
+            "展翅达两米宽的变异巨型飞禽，全身覆盖墨黑色羽毛，鸟喙如铁钩般锐利，双眼混浊红光；巢中产青斑点硬壳鸟蛋。",
+            "禽肉可柴火烤食；鸟蛋可煮食、煎炒或做鸟蛋汤。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-016_views_v1.png"
+      },
+      "detail_source": [
+        "240 Roast Turkey",
+        "熟食",
+        "饱食 80，由 239 烧烤，缺独立预制体。",
+        "金黄烤火鸡，表皮油亮，腹中可见填料，配香草与烤蔬菜。",
+        "感恩节烤火鸡。",
+        "13.1 §4.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 16,
+      "refs": "F23",
+      "target": "妖怪上等生肉",
+      "branch": "高热肉生熟链",
+      "rank": 1,
+      "adaptation": "242→243以大块高热异种肉代替重复火鸡",
+      "visual": "One thick dark rose rectangular prime meat slab with TWO broad cream fat stripes, larger cut than basic meat but same inventory scale, no blood or monster body.",
+      "id": "FOD-017",
+      "original": "242 Turkey",
+      "original_features": "饱食 40，重名",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 23,
+          "name": "妖怪肉",
+          "cells": [
+            "23",
+            "兽肉食材",
+            "妖怪肉",
+            "属主：妖怪 (变异棕熊)",
+            "废土顶级陆生巨兽，体型高超三米，体重近吨，全身肌肉暴起并覆盖厚重黑灰色硬毛与变异角质层，带有钢钩利爪。",
+            "顶级高级异种肉，肉质粗犷，蕴含极高热量与活性能量。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-017_views_v1.png"
+      },
+      "detail_source": [
+        "242 Turkey",
+        "生肉",
+        "饱食 40，大火鸡掉落，重名物品。",
+        "更大的生火鸡，皮肤偏红，带明显肌肉与脂肪。",
+        "大型生火鸡。",
+        "13.1 §4.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 17,
+      "refs": "F23,F46",
+      "target": "蜜烤妖怪肉",
+      "branch": "高热肉生熟链",
+      "rank": 3,
+      "adaptation": "高饱食120由精制烹饪表达，不冒充真科技升级",
+      "visual": "One thick amber-brown glazed prime roast slab, TWO golden fat stripes and three shallow score cuts, no blood, no plate or side dishes.",
+      "id": "FOD-018",
+      "original": "243 Roast Turkey",
+      "original_features": "饱食 120，缺预制体",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 23,
+          "name": "妖怪肉",
+          "cells": [
+            "23",
+            "兽肉食材",
+            "妖怪肉",
+            "属主：妖怪 (变异棕熊)",
+            "废土顶级陆生巨兽，体型高超三米，体重近吨，全身肌肉暴起并覆盖厚重黑灰色硬毛与变异角质层，带有钢钩利爪。",
+            "顶级高级异种肉，肉质粗犷，蕴含极高热量与活性能量。"
+          ]
+        },
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 46,
+          "name": "风干肉 / 腊肉 / 熏肉",
+          "cells": [
+            "46",
+            "储备肉类",
+            "风干肉 / 腊肉 / 熏肉",
+            "肉类腌制烟熏",
+            "经盐腌制或柴火烟熏后，呈深褐色或焦黑色硬梆梆的肉块，表面带有白色盐霜。",
+            "风干腌制，能保存数月甚至越冬，废土出行必备干粮。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-018_views_v1.png"
+      },
+      "detail_source": [
+        "243 Roast Turkey",
+        "熟食",
+        "饱食 120，由 242 烧烤，缺独立预制体。",
+        "超大金黄烤火鸡，表面有焦痕，盘中配土豆与浆果。",
+        "盛宴烤火鸡。",
+        "13.1 §4.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "food",
+      "index": 18,
+      "refs": "F5",
+      "target": "烘暖卡姆果",
+      "branch": "特殊补给",
+      "rank": 1,
+      "adaptation": "暖果改编；保暖来自加工状态，不声称原果自发热",
+      "visual": "One yellow-green oval hard fruit with warm golden toasted patches, short brown stalk and ONE small green leaf, no flames or magical steam.",
+      "id": "FOD-019",
+      "original": "245 Warm fruit",
+      "original_features": "饱食 7，保暖向",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.2",
+      "source_rows": [
+        {
+          "file": "tmp/wasteland_food_and_ingredients.md",
+          "row": 5,
+          "name": "卡姆果 (卡姆树果实)",
+          "cells": [
+            "5",
+            "废土主食",
+            "卡姆果 (卡姆树果实)",
+            "卡姆树",
+            "卡姆树结出的黄绿色椭圆形硬质果实，表皮略带蜡质，内部带有富含油脂的种籽与芳香果肉。",
+            "可榨取卡姆油，果肉与种籽烘干研磨后可作为香料替代品去腥。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "食物/final/FOD-019_views_v1.png"
+      },
+      "detail_source": [
+        "245 Warm fruit",
+        "蔬菜",
+        "饱食 7，雪原掉落，偏保暖向。",
+        "橙红色暖果，类似柿子/柑橘，表皮有霜，掰开冒热气。",
+        "冬季暖身果实。",
+        "13.1 §4.2",
+        "P1"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 0,
+      "refs": "E3",
+      "target": "龙骑兵助推靴·测试型",
+      "branch": "调试预留",
+      "rank": 0,
+      "adaptation": "管理员护甲50仅调试；只画靴子不画全装甲",
+      "visual": "A matched PAIR of dark grey armored high boots with small inset sole thruster ports and compact ankle plates, no legs, no flames, no standalone platform.",
+      "id": "EQP-001",
+      "original": "Admin shoe（1）",
+      "original_features": "GM 护甲 50",
+      "priority": "P2",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 3,
+          "name": "OD-10 “龙骑兵”动力装甲",
+          "cells": [
+            "3",
+            "OD-10 “龙骑兵”动力装甲",
+            "全套战术重装 / 动力装甲",
+            "战前人联空天军",
+            "微型核聚变核心 / 气动推进",
+            "深灰色空天防辐射涂层，轻量化高强度钛合金与碳纤维复合外壳，背部与脚底配有气动/离子喷气推进喷口，面具集成全息感应视野。",
+            "轨道空降部队专用，具备高空坠落降速与短途低空跃迁机动能力，穿透性与高机动性极强。"
+          ]
+        }
+      ],
+      "status": "调试/占位/预备",
+      "images": {
+        "v1": "装备与饰品/final/EQP-001_views_v1.png"
+      },
+      "detail_source": [
+        "Admin shoe（1）",
+        "鞋",
+        "GM 专属鞋，护甲 50。",
+        "发光/镀金牛仔靴，鞋面有 GM 标识与宝石扣，鞋底带光环。",
+        "开发者特权装备。",
+        "13.1 §4.4",
+        "P2"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 1,
+      "refs": "E21",
+      "target": "变异兽皮护胸",
+      "branch": "护胸主线",
+      "rank": 1,
+      "adaptation": "原护甲2；保留胸部可穿戴边界",
+      "visual": "Standalone brown leather CHEST VEST with two shoulder straps, thick hand-stitched panels and FOUR copper rivets, open arm holes, no head/limbs/mannequin.",
+      "id": "EQP-002",
+      "original": "301 Leather Armor",
+      "original_features": "护甲 2",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 21,
+          "name": "变异兽皮护甲",
+          "cells": [
+            "21",
+            "变异兽皮护甲",
+            "局部战术防具",
+            "废土猎户 / 掠夺者",
+            "角鹿皮 / 双头牛皮 / 铜铆钉",
+            "厚重粗糙的深褐色皮革，边缘缝制粗铁线与金属铆钉，散发浓郁的生皮气味。",
+            "废土猎户手作防具，具备防刮擦、防兽爪划伤与防寒功效。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-002_views_v1.png"
+      },
+      "detail_source": [
+        "301 Leather Armor",
+        "胸甲",
+        "护甲 2 的基础皮甲。",
+        "粗制皮背心，厚牛皮拼接，麻绳缝合，肩部有磨损与补丁。",
+        "拓荒者皮甲。",
+        "13.1 §4.4",
+        "P0"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 2,
+      "refs": "E20",
+      "target": "军团合金胸甲",
+      "branch": "护胸主线",
+      "rank": 2,
+      "adaptation": "原护甲5；板片式防护",
+      "visual": "Standalone charcoal steel CHEST ARMOR with broad rectangular front plate, two shoulder tabs and dark leather side straps, subtle stamped geometric bird mark, no mannequin or limbs.",
+      "id": "EQP-003",
+      "original": "302 Iron Armor",
+      "original_features": "护甲 5",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 20,
+          "name": "军团军官防弹胸甲",
+          "cells": [
+            "20",
+            "军团军官防弹胸甲",
+            "局部战术防具",
+            "军团 (威兰特人)",
+            "锻造硬质合金 / 铸铁",
+            "粗犷方正，带有军团三头鹰防伪压痕与防锈漆斑驳的暗灰色金属光泽。",
+            "军团十夫长、百夫长标准胸前防具。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-003_views_v1.png"
+      },
+      "detail_source": [
+        "302 Iron Armor",
+        "胸甲",
+        "护甲 5 的铁甲。",
+        "铁片胸甲，铆钉固定，表面有锤痕与锈，内衬皮革，肩部有护片。",
+        "西部铁匠胸甲。",
+        "13.1 §4.4",
+        "P0"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 3,
+      "refs": "E1",
+      "target": "T-10陶钢动力护胸",
+      "branch": "护胸主线",
+      "rank": 5,
+      "adaptation": "原护甲8；从全套动力甲提取胸背组件，不增加完整四肢",
+      "visual": "Standalone compact cobalt-blue powered CHEST AND BACK armor assembly, broad angled ceramic plates, white-grey shoulder tabs, two rear short vents, small central power indicator, open neck/armholes, no helmet or limbs.",
+      "id": "EQP-004",
+      "original": "303 Gilded Armor",
+      "original_features": "护甲 8",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 1,
+          "name": "T-10 动力装甲",
+          "cells": [
+            "1",
+            "T-10 动力装甲",
+            "全套战术重装 / 动力装甲",
+            "战前人联陆战队",
+            "陶钢/塑钢复合装甲，氘氚/He3核聚变堆",
+            "湛蓝色高光防弹涂层，全包覆厚重陶钢防弹防辐射装甲板，肌肉感线条，背部带有双侧聚变散热气孔、冷凝管道与重型装备挂架，机体高大威猛。",
+            "战前人联主战装甲，防御媲美主战坦克，具备全密封生化与辐射防护，可单手操控重型链锯与重火器。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-004_views_v1.png"
+      },
+      "detail_source": [
+        "303 Gilded Armor",
+        "胸甲",
+        "护甲 8 的镀金甲。",
+        "镀金胸甲，黄铜/金色表面雕花，边缘镶红宝石，内衬深色皮革。",
+        "赏金猎人礼装。",
+        "13.1 §4.4",
+        "P1"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 4,
+      "refs": "E9",
+      "target": "黄金特装护胸·预备型",
+      "branch": "占位预留",
+      "rank": 0,
+      "adaptation": "原护甲999占位不进入正式强度序列",
+      "visual": "Standalone gold-coated heavy chest armor with plain graphite inner carrier, broad beveled plates and simple eagle medallion, no ornate filigree, no limbs or mannequin.",
+      "id": "EQP-005",
+      "original": "304 Gilded Breastplate",
+      "original_features": "护甲 999，占位",
+      "priority": "P2",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 9,
+          "name": "“黄金”特装动力装甲",
+          "cells": [
+            "9",
+            "“黄金”特装动力装甲",
+            "全套战术重装 / 动力装甲",
+            "军团 / 尤里乌斯",
+            "军用冷聚变堆芯",
+            "全身镀金与高光镜面抛光，带有军团双头鹰雕花胸甲与繁复金蚀纹样，在战场日光下极为耀眼。",
+            "高阶军阀与指挥官专属尊贵装甲，不仅具备强悍防御，更象征最高统治权力。"
+          ]
+        }
+      ],
+      "status": "调试/占位/预备",
+      "images": {
+        "v1": "装备与饰品/final/EQP-005_views_v1.png"
+      },
+      "detail_source": [
+        "304 Gilded Breastplate",
+        "胸甲",
+        "护甲 999 的占位胸甲，疑似测试。",
+        "与 303 类似但金光更夸张，可能有 GM/测试标识，细节未完成。",
+        "占位神装。",
+        "13.1 §4.4",
+        "P2"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 5,
+      "refs": "E18",
+      "target": "高分子陶钢防弹胸甲",
+      "branch": "护胸主线",
+      "rank": 4,
+      "adaptation": "原护甲7；高于几丁质6，低于动力护胸8",
+      "visual": "Standalone grey-white faceted ceramic ballistic CHEST carrier with dark fabric straps and one small cyan status inset, angular shoulder tabs, no crystal or fantasy gem, no limbs.",
+      "id": "EQP-006",
+      "original": "305 Gem Armor",
+      "original_features": "护甲 7",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 18,
+          "name": "高分子陶钢防弹胸甲",
+          "cells": [
+            "18",
+            "高分子陶钢防弹胸甲",
+            "局部战术防具",
+            "战前/新联盟/企业",
+            "陶钢 / 塑钢复合板",
+            "呈多边形斜角切面防弹造型，哑光黑色或灰色防腐涂装，配有战术插板袋与防脱挂钩。",
+            "有效抵御 7.62mm 全威力步枪弹直射与高爆破片杀伤。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-006_views_v1.png"
+      },
+      "detail_source": [
+        "305 Gem Armor",
+        "胸甲",
+        "护甲 7 的宝石甲。",
+        "深蓝/紫色胸甲，胸口嵌大型发光宝石，甲片有水晶纹路，金属包边。",
+        "水晶甲、魔法护甲。",
+        "13.1 §4.4",
+        "P1"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 6,
+      "refs": "E34",
+      "target": "战术防尘风镜面罩",
+      "branch": "面部防护",
+      "rank": 1,
+      "adaptation": "原护甲4；风镜加下半脸布罩的游戏化组合",
+      "visual": "Wearable standalone amber single-piece dust goggles attached to a dark cloth lower-face mask, simple rear elastic strap, open forehead, no human head.",
+      "id": "EQP-007",
+      "original": "306 Bandit Mask",
+      "original_features": "护甲 4",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 34,
+          "name": "战术防尘风镜",
+          "cells": [
+            "34",
+            "战术防尘风镜",
+            "防护服与服装",
+            "飞行员 / 废土客",
+            "聚碳酸酯防爆镜片",
+            "黑色橡皮带固定，灰色或黄绿色防眩光防爆镜片。",
+            "挡风沙、防强光刺眼与防飞溅碎屑。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-007_views_v1.png"
+      },
+      "detail_source": [
+        "306 Bandit Mask",
+        "面罩",
+        "护甲 4 的强盗面罩。",
+        "深色布质半脸面罩，遮住口鼻，边缘磨损，后脑用绳系紧。",
+        "西部劫匪蒙面布。",
+        "13.1 §4.4",
+        "P0"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 7,
+      "refs": "E33",
+      "target": "双滤罐防毒面具",
+      "branch": "面部防护",
+      "rank": 2,
+      "adaptation": "原护甲8；双滤罐取代鸟嘴造型",
+      "visual": "Standalone black rubber full-face respirator, TWO round glass eye lenses, TWO identical side filter canisters and rear straps, no head or helmet.",
+      "id": "EQP-008",
+      "original": "307 Bird Beak Mask",
+      "original_features": "护甲 8",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 33,
+          "name": "全脸防毒面具",
+          "cells": [
+            "33",
+            "全脸防毒面具",
+            "防护服与服装",
+            "废土通用",
+            "黑色防腐橡胶",
+            "全脸包裹，配有双侧螺纹滤毒罐与圆形玻璃眼罩。",
+            "过滤废土毒气、有毒烟雾与黏菌孢子。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-008_views_v1.png"
+      },
+      "detail_source": [
+        "307 Bird Beak Mask",
+        "面罩",
+        "护甲 8 的鸟嘴面罩。",
+        "黑色鸟嘴面具，长喙、圆形护目镜、皮革绑带，喙部有缝线与羽毛装饰。",
+        "瘟疫医生面具。",
+        "13.1 §4.4",
+        "P1"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 8,
+      "refs": "E36",
+      "target": "防刺战术军靴",
+      "branch": "足部防护",
+      "rank": 1,
+      "adaptation": "原护甲3；保留成对靴件",
+      "visual": "A matching PAIR of black high tactical boots, chunky ribbed soles, broad toe caps, three simple lace bands and ankle straps, no legs.",
+      "id": "EQP-009",
+      "original": "308 Cowboy Boots",
+      "original_features": "护甲 3",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 36,
+          "name": "防刺战术军靴",
+          "cells": [
+            "36",
+            "防刺战术军靴",
+            "防护服与服装",
+            "废土客 / 佣兵",
+            "战术皮革与防弹钢板",
+            "黑色高帮战术靴，鞋底内置防刺穿钢板与防滑大齿。",
+            "防踏空刺穿、防蛇虫咬伤与适应崎岖废土地形。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-009_views_v1.png"
+      },
+      "detail_source": [
+        "308 Cowboy Boots",
+        "鞋",
+        "护甲 3 的牛仔靴。",
+        "棕色皮质牛仔靴，尖头、高跟、刺绣花纹，靴口有拉环与磨损。",
+        "西部牛仔靴。",
+        "13.1 §4.4",
+        "P0"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 9,
+      "refs": "E22",
+      "target": "裂爪蟹几丁质护胸",
+      "branch": "护胸主线",
+      "rank": 3,
+      "adaptation": "原护甲6；甲壳取代鳄鱼鳞片",
+      "visual": "Standalone grey-green chitin chest armor, THREE broad overlapping curved shell plates, simple brown shoulder straps, mineral shell texture and two blunt ridges, no limbs.",
+      "id": "EQP-010",
+      "original": "309 Swampscale Breastplate",
+      "original_features": "护甲 6",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 22,
+          "name": "几丁质硬壳防具",
+          "cells": [
+            "22",
+            "几丁质硬壳防具",
+            "局部战术防具",
+            "废土猎人 / 新联盟",
+            "裂爪蟹壳 / 鬼面虫背甲",
+            "灰白或黑斑硬质生物甲壳，表面带有天然弧度与凹凸不平的骨刺，质地极其坚硬。",
+            "利用废土高阶异种外壳打磨制成的防弹防刺护甲。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-010_views_v1.png"
+      },
+      "detail_source": [
+        "309 Swampscale Breastplate",
+        "胸甲",
+        "护甲 6 的沼泽鳞甲。",
+        "深绿鳞片甲，鳞片似鳄鱼皮，边缘有苔藓与泥污，肩部有骨饰。",
+        "沼泽猎手鳞甲。",
+        "13.1 §4.4",
+        "P1"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 10,
+      "refs": "E26",
+      "target": "密封防辐射头罩",
+      "branch": "面部防护",
+      "rank": 2,
+      "adaptation": "原护甲8；提取头罩替羊头面罩，非整套连体服",
+      "visual": "Standalone pale yellow sealed protective HOOD, wide dark transparent face window, TWO small filter ports and thick black neck seal, no head, torso or gloves.",
+      "id": "EQP-011",
+      "original": "310 Sheep Head Mask",
+      "original_features": "护甲 8",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 26,
+          "name": "全密封防辐射服 / 防化服",
+          "cells": [
+            "26",
+            "全密封防辐射服 / 防化服",
+            "防护服与服装",
+            "战前遗迹 / 科考团",
+            "铅衬高分子防腐橡胶",
+            "亮黄色或白色全密封连体衣，带有双滤毒罐气密头罩与透明观察窗。",
+            "抵御高强度核辐射、化学毒气与生化孢子侵蚀。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-011_views_v1.png"
+      },
+      "detail_source": [
+        "310 Sheep Head Mask",
+        "面罩",
+        "护甲 8 的羊头面罩。",
+        "白色羊头骨/羊毛面具，弯曲羊角，空洞眼窝，边缘挂布条与铃铛。",
+        "羊头萨满面具。",
+        "13.1 §4.4",
+        "P1"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 11,
+      "refs": "E13",
+      "target": "重骑兵外骨骼护胸",
+      "branch": "护胸主线",
+      "rank": 4.5,
+      "adaptation": "原护甲8同档侧支；仅胸背伺服结构，不画整副机架",
+      "visual": "Standalone black CHEST armor with two thick shoulder support arches, compact side servo hinges and graphite front ballistic plate, small blue battery at back, no arms/legs.",
+      "id": "EQP-012",
+      "original": "311 Thor's Armor",
+      "original_features": "护甲 8",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 13,
+          "name": "六式“重骑兵”警用外骨骼",
+          "cells": [
+            "13",
+            "六式“重骑兵”警用外骨骼",
+            "战术外骨骼",
+            "战前警用 / 巨石城",
+            "固态氢电池 / 钢制防弹板",
+            "哑光黑色加厚钢骨框架，胸部与大腿配有方正的硬质防弹钢板，连接关节处粗壮并带有重型防护套环。",
+            "五式改进型，牺牲少量机动性换取强大的正面防弹能力，前线步兵最爱。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-012_views_v1.png"
+      },
+      "detail_source": [
+        "311 Thor's Armor",
+        "胸甲",
+        "护甲 8 的雷神甲。",
+        "厚重铁甲，胸口刻雷电纹，肩甲呈锤形，披红色短披风，金属带蓝光。",
+        "北欧雷神甲。",
+        "13.1 §4.4",
+        "P1"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 12,
+      "refs": "E29",
+      "target": "粗布遮风围领",
+      "branch": "颈部防护",
+      "rank": 1,
+      "adaptation": "斗篷裁成颈部围领；保留减伤0.2角色",
+      "visual": "Standalone folded sand-brown hoodless neck scarf/cowl, coarse triangular cloth drape, one simple knot and frayed lower edge, no head or full cape.",
+      "id": "EQP-013",
+      "original": "312 Scarf V1",
+      "original_features": "减伤 0.2",
+      "priority": "P0",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 29,
+          "name": "废土粗布/皮质遮风斗篷",
+          "cells": [
+            "29",
+            "废土粗布/皮质遮风斗篷",
+            "防护服与服装",
+            "废土流民 / 佣兵",
+            "粗麻布 / 废旧皮革",
+            "宽大带有兜帽的沙黄色或土灰色长斗篷，边缘带有磨损毛边与油污。",
+            "遮挡荒野风沙、酷烈日光与夜间保暖，掩盖身上装备。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-013_views_v1.png"
+      },
+      "detail_source": [
+        "312 Scarf V1",
+        "围巾",
+        "减伤 0.2 的基础围巾。",
+        "粗针织长围巾，土红/棕色，末端有流苏，绕颈两圈。",
+        "冬季毛线围巾。",
+        "13.1 §4.4",
+        "P0"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 13,
+      "refs": "E28",
+      "target": "魔鬼丝防弹围领",
+      "branch": "颈部防护",
+      "rank": 2,
+      "adaptation": "防弹斗篷改成围领；对应减伤0.37",
+      "visual": "Standalone charcoal silk tactical neck cowl, layered smooth folded collar, short triangular chest drape and ONE silver clasp, subtle woven sheen, no full cape or body.",
+      "id": "EQP-014",
+      "original": "313 Scarf V2",
+      "original_features": "减伤 0.37",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 28,
+          "name": "魔鬼丝战术防弹斗篷",
+          "cells": [
+            "28",
+            "魔鬼丝战术防弹斗篷",
+            "防护服与服装",
+            "新联盟 / 变异魔鬼蚕丝",
+            "魔鬼丝高分子织物",
+            "暗灰或黑色轻盈斗篷，质地如丝绸般光滑但极其坚韧，带有遮阳兜帽。",
+            "极轻便且防弹防刺，能轻易挡下流弹与弹药破片。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-014_views_v1.png"
+      },
+      "detail_source": [
+        "313 Scarf V2",
+        "围巾",
+        "减伤 0.37 的升级围巾。",
+        "更厚的长围巾，深蓝/灰色格纹，带皮革扣与毛边，末端流苏更长。",
+        "格纹羊毛围巾。",
+        "13.1 §4.4",
+        "P1"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 14,
+      "refs": "E4",
+      "target": "海狮密封护胸",
+      "branch": "环境护胸侧支",
+      "rank": 5,
+      "adaptation": "原护甲8同档环境分支；只提取胸背水密组件",
+      "visual": "Standalone teal/navy sealed chest armor, rounded pressure plate, thick dark gasket seams, one compact sonar status inset and two small rear ports, open armholes, no helmet/limbs.",
+      "id": "EQP-015",
+      "original": "314 Ice Armor",
+      "original_features": "护甲 8",
+      "priority": "P1",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 4,
+          "name": "“海狮”两栖动力装甲",
+          "cells": [
+            "4",
+            "“海狮”两栖动力装甲",
+            "全套战术重装 / 动力装甲",
+            "北岛重工 / 企业",
+            "氘氚聚变堆 / 密封水压舱",
+            "深绿与海蓝色高压防腐涂层，圆润流线型躯干与深水抗压外壳，带有加厚水下橡塑密封胶条与自带声呐感应视窗的圆顶头盔。",
+            "基于龙骑兵改进的水陆两用动力装甲，具备极高的深水抗压防护与水下潜航机动能力。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-015_views_v1.png"
+      },
+      "detail_source": [
+        "314 Ice Armor",
+        "胸甲",
+        "护甲 8 的冰甲。",
+        "半透明冰晶胸甲，蓝白渐变，表面有霜纹与冰刺，内衬毛皮。",
+        "冰霜护甲。",
+        "13.1 §4.4",
+        "P1"
+      ]
+    },
+    {
+      "category": "equipment",
+      "index": 15,
+      "refs": "E16,E31",
+      "target": "先锋冬季战术护胸",
+      "branch": "活动护胸侧支",
+      "rank": 4,
+      "adaptation": "原护甲7；冬季皮草为适配改编，不假装高于T-10",
+      "visual": "Standalone sand-grey composite chest vest with neat cream fur collar and dark inset shoulder webbing, compact rear battery panel, no seasonal ornaments, no mannequin/limbs.",
+      "id": "EQP-016",
+      "original": "315 Santa Armor",
+      "original_features": "护甲 7",
+      "priority": "P2",
+      "source_gdd": "13.1 §4.4",
+      "source_rows": [
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 16,
+          "name": "“先锋 I 型”军用外骨骼",
+          "cells": [
+            "16",
+            "“先锋 I 型”军用外骨骼",
+            "战术外骨骼",
+            "企业 (银翼集团)",
+            "金属氢电池",
+            "沙漠黄与高科技灰涂装，无缝高分子防护外壳包裹内侧液压管线，前臂配战术终端数码接口。",
+            "企业山地师与精锐步兵装备，自带伺服机动辅助与战术网络连线。"
+          ]
+        },
+        {
+          "file": "tmp/personal_equipment_catalog_two_tables.md",
+          "row": 31,
+          "name": "变异兽皮大衣",
+          "cells": [
+            "31",
+            "变异兽皮大衣",
+            "防护服与服装",
+            "荒野猎户 / 废土客",
+            "角鹿皮 / 变异牛皮",
+            "带有厚重外露皮草绒毛的棕色大衣，质地厚重笨拙。",
+            "废土极寒冬季御寒必备，防风雪性能极佳。"
+          ]
+        }
+      ],
+      "status": "常规/侧支",
+      "images": {
+        "v1": "装备与饰品/final/EQP-016_views_v1.png"
+      },
+      "detail_source": [
+        "315 Santa Armor",
+        "胸甲",
+        "护甲 7 的圣诞甲。",
+        "红色胸甲配白色毛边，金色扣环，胸口有圣诞树/雪花纹，肩部有铃铛。",
+        "圣诞战士护甲。",
+        "13.1 §4.4",
+        "P2"
+      ]
+    }
+  ]
+}
